@@ -3,10 +3,11 @@ import styled from "styled-components";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 export const Nav = styled.nav`
-    background-color: transparent;
+    background-color: ${({ colorNav }) => colorNav ? "orange" : "transparent"};
     position: absolute;
     top: 0;
     width: 100%;
+    height: 80px;
     position: fixed;
 `;
 
@@ -35,7 +36,7 @@ export const NaVMenu = styled.ul`
 
     @media (max-width: 768px) {
         opacity: ${({ show }) => show ? "1" : "0"};
-        visibility: ${({show}) => show ? "visible" : "hidden" };
+        visibility: ${({ show }) => show ? "visible" : "hidden"};
         background-color: orange;
         margin-top: 0;
         width: 100%;
@@ -57,8 +58,16 @@ export const NavLinks = styled(NavLink)`
     color: #000958;
     text-decoration: none;
 
+    &:hover {
+        border-bottom: 1px solid #000958;
+    }
+
     @media (max-width: 768px) {
         color: white;
+
+        &:hover {
+        border-bottom: 1px solid white;
+        }
     }
 `;
 export const MenuMobile = styled.div`

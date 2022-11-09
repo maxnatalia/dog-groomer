@@ -14,8 +14,20 @@ const Navigation = () => {
         setShow(false)
     };
 
+    const [colorNav, setColorNav] = useState(false);
+
+    const changeColorNav = () => {
+        if(window.scrollY >= 80) {
+            setColorNav(true)
+        } else {
+            setColorNav(false)
+        }
+    };
+
+    window.addEventListener("scroll", changeColorNav)
+
     return (
-        <Nav>
+        <Nav colorNav={colorNav} >
             <Container>
                 <LogoWrapper>
                     <Logo src={logo} alt="" /><p>Dog Groomer</p>
@@ -26,7 +38,7 @@ const Navigation = () => {
                 <NaVMenu show={show} >
                     {navigationData.map((item, index) => (
                         <NavItem key={index}>
-                            <NavLinks onClick={() => closeMobileMenu()} to={item.to}>
+                            <NavLinks onClick={() => closeMobileMenu()} to={item.to} >
                                 {item.text}
                             </NavLinks>
                         </NavItem>
