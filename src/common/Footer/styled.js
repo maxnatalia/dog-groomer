@@ -40,15 +40,6 @@ export const ContactPhone=styled.p`
 
 export const ContactHours=styled.p`
 `;
-
-export const Button=styled.button`
-    background-color: #dc952a;
-    color: white;
-    font-weight: 700;
-    border-radius: 20px;
-    border: none;
-    padding: 10px 20px;
-`;
 export const ImgContact=styled.img`
     position: absolute;
     top: 60px;

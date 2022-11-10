@@ -7,7 +7,6 @@ import {
     ContactPhone,
     ContactTitle,
     ContactHours,
-    Button,
     SocialsContainer,
     Copywrite,
     ContainerSocial,
@@ -19,6 +18,8 @@ import contact from "./dog-contact.png";
 import iconDog from "./logo-white.svg";
 import tel from "./phone.svg";
 import { social } from "./footerData";
+import { Button } from "../Button/styled";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
@@ -37,7 +38,9 @@ const Footer = () => {
                     <ContactHours>
                         Opening Hours: Mon - Sun: 10am - 6pm
                     </ContactHours>
-                    <Button>Get Appointment</Button>
+                    <Link to="/appointment" >
+                        <Button>Get Appointment</Button>
+                    </Link>
                 </ContactWrapper>
             </Container>
             <SocialsContainer>
