@@ -38,7 +38,7 @@ const Navigation = () => {
                 <NaVMenu show={show} >
                     {navigationData.map((item, index) => (
                         <NavItem key={index}>
-                            <NavLinks onClick={() => closeMobileMenu()} to={item.to} >
+                            <NavLinks to={item.to} onClick={() => closeMobileMenu()}  >
                                 {item.text}
                             </NavLinks>
                         </NavItem>
