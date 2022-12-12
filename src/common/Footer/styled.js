@@ -79,7 +79,7 @@ export const SocialIcon = styled.a`
 `;
 
 export const Div = styled.div`
-    background-color: green;
+    background-color: #dc952a;
     border-radius: 50%;
     position: fixed;
     bottom: 100px;
@@ -90,5 +90,7 @@ export const Div = styled.div`
 `;
 
 export const IconArrow = styled(AiOutlineArrowUp)`
-    color: black;
+    color: white;
+    font-size: 18px;
+    width: 22px;
 `;
