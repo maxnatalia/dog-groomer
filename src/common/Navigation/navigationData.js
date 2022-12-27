@@ -11,4 +11,8 @@ export const navigationData = [
 		to: "/appointment",
 		text: 'Get Appointment',
 	},
+	{
+		to: "/reminder",
+		text: 'Reminder',
+	},
 ];
