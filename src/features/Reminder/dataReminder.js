@@ -1,4 +1,4 @@
-export default [
+export const dataReminder = [
     {
       id: 1,
       name: 'Bertie Yates',
