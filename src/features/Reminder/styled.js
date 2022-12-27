@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const Section = styled.section`
-    width: 90vw;
-    margin: 100px auto;
+    width: 100%;
+    margin: 0 auto;
     max-width: 1170px;
 `;
 
@@ -14,7 +14,7 @@ export const Image = styled.img`
 `;
 
 export const Container = styled.div`
-    width: 90vw;
+    padding: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
