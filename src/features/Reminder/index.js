@@ -1,24 +1,31 @@
 import { useState } from "react";
-import dataReminder from "./dataReminder";
+import { Section, Image, Container, Wrapper, Button } from "./styled";
+import { dataReminder } from "./dataReminder";
 
 const Reminder = () => {
     const [data, setData] = useState(dataReminder);
+
+    const removeItem = (id) => {
+        let newData = data.filter((item) => item.id !== id);
+        return setData(newData);
+    }
     return (
-        <main>
-            <section>
-                <div>
-                    <h2>{data.length} Reminder</h2>
-                    {data.map(({ id, name, age, image }) =>
-                        <div key={id}>
-                            <img src={image} alt={name} />
-                            <h3>{name}</h3>
-                            <p>{age}</p>
-                        </div>
-                    )}
-                    <button onClick={() => setData([])}>Clear Data</button>
-                </div>
-            </section>
-        </main>
+
+        <Section>
+            <Container>
+                <h2>{data.length} Reminder</h2>
+                {data.map(({ id, name, age, image }) =>
+                    <Wrapper key={id}>
+                        <Image src={image} alt={name} />
+                        <h3>{name}</h3>
+                        <p>{age}</p>
+                        <button onClick={() => removeItem(id)}>Remove</button>
+                    </Wrapper>
+                )}
+                <Button onClick={() => setData([])}>Clear Data</Button>
+            </Container>
+        </Section>
+
     )
 }
 
