@@ -15,4 +15,8 @@ export const navigationData = [
 		to: "/reminder",
 		text: 'Reminder',
 	},
+	{
+		to: "/questions",
+		text: 'Q&A',
+	},
 ];
