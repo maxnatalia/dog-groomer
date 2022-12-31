@@ -27,7 +27,7 @@ import { useState } from "react";
 const Footer = () => {
     const [visible, setVisible] = useState(false);
     window.addEventListener("scroll", () => {
-        window.pageYOffset > 100 ? setVisible(true) : setVisible(false)
+        window.scrollY > 100 ? setVisible(true) : setVisible(false)
     })
 
     return (
