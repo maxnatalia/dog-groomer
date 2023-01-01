@@ -35,8 +35,8 @@ export const NaVMenu = styled.ul`
     padding: 10px;
 
     @media (max-width: 768px) {
-        opacity: ${({ show }) => show=true ? "1" : "0"};
-        visibility: ${({ show }) => show=true ? "visible" : "hidden"};
+        opacity: ${({ show }) => show ? "1" : "0"};
+        visibility: ${({ show }) => show ? "visible" : "hidden"};
         background-color: orange;
         margin-top: 0;
         width: 100%;
