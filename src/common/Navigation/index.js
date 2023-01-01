@@ -10,10 +10,6 @@ const Navigation = () => {
         setShow(!show)
     };
 
-    const closeMobileMenu = () => {
-        setShow(false)
-    };
-
     const [colorNav, setColorNav] = useState(false);
 
     const changeColorNav = () => {
@@ -38,7 +34,7 @@ const Navigation = () => {
                 <NaVMenu show={show} >
                     {navigationData.map((item, index) => (
                         <NavItem key={index}>
-                            <NavLinks to={item.to} onClick={() => closeMobileMenu()}  >
+                            <NavLinks to={item.to} onClick={() => setShow(false)} >
                                 {item.text}
                             </NavLinks>
                         </NavItem>
