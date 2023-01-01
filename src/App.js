@@ -4,15 +4,17 @@ import PricingPage from "./features/PricingPage";
 import AppointmentPage from "./features/AppointmentPage";
 import Navigation from "./common/Navigation";
 import Reminder from "./features/Reminder";
+import Questions from "./features/Questions";
 
 function App() {
   return (
     <BrowserRouter>
-    <Navigation />
+      <Navigation />
       <Switch>
         <Route path="/price"><PricingPage /></Route>
         <Route path="/appointment"><AppointmentPage /></Route>
         <Route path="/reminder"><Reminder /></Route>
+        <Route path="/questions"><Questions /></Route>
         <Route path="/"><HomePage /></Route>
       </Switch>
     </BrowserRouter>
