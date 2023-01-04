@@ -19,4 +19,8 @@ export const navigationData = [
 		to: "/questions",
 		text: 'Q&A',
 	},
+	{
+		to: "/slider",
+		text: 'Slider',
+	},
 ];
