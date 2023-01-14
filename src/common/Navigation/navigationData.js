@@ -20,7 +20,7 @@ export const navigationData = [
 		text: 'Q&A',
 	},
 	{
-		to: "/slider",
-		text: 'Slider',
+		to: "/staff",
+		text: 'Staff',
 	},
 ];
