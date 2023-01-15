@@ -10,6 +10,26 @@ export const Section = styled.section`
 export const Title = styled.h2`
     text-align: center;
     font-size: 40px;
+    margin: 0;
+`;
+
+export const Wrapper = styled.div`
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+    @media (max-width: 767px) {
+        flex-direction: column;
+        padding: 20px;
+    }
+`;
+
+export const ImageDog = styled.img`
+    width: 300px;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border: 6px solid orange;
 `;
 
 export const SectionCenter = styled.div`
