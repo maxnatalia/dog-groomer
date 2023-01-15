@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 import { FiChevronRight, FiChevronLeft } from 'react-icons/fi';
 import data from './data';
-import { Section, Title, SectionCenter, Button, Image, IconQuote, Article } from './styled';
+import { Section, Title, ImageDog, Wrapper, SectionCenter, Button, Image, IconQuote, Article } from './styled';
+import dog from "../../images/dog3.jpg"
 
 const Staff = () => {
     const [index, setIndex] = useState(0);
@@ -44,14 +45,16 @@ const Staff = () => {
     return (
         <Section>
             <Title>Our Staff</Title>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in sodales urna.
-                Cras pharetra orci non risus auctor suscipit ut sit amet nulla. Nulla tempor finibus nulla sit amet bibendum.
-                Suspendisse porttitor gravida porta. Mauris ac urna consectetur, gravida risus ut, bibendum nulla.
-            </p>
-            <p>Fusce suscipit orci nec lacus consequat, eu rhoncus nulla placerat. Sed nec dictum erat.
-                Vivamus eu nulla felis. In posuere blandit cursus. In justo nunc, vulputate at massa eget, bibendum bibendum sapien.
-                Fusce quis erat libero. Ut ut velit nec ex rutrum feugiat ut quis nisl.
-                convallis dui eu libero tincidunt lobortis.</p>
+            <Wrapper>
+                <ImageDog src={dog} alt="dog" />
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in sodales urna.
+                    Cras pharetra orci non risus auctor suscipit ut sit amet nulla. Nulla tempor finibus nulla sit amet bibendum.
+                    Suspendisse porttitor gravida porta. Mauris ac urna consectetur, gravida risus ut, bibendum nulla.
+                    Fusce suscipit orci nec lacus consequat, eu rhoncus nulla placerat. Sed nec dictum erat.
+                    Vivamus eu nulla felis. In posuere blandit cursus. In justo nunc, vulputate at massa eget, bibendum bibendum sapien.
+                    Fusce quis erat libero. Ut ut velit nec ex rutrum feugiat ut quis nisl.
+                    convallis dui eu libero tincidunt lobortis.</p>
+            </Wrapper>
             <SectionCenter>
                 {data.map((person, personIndex) => {
                     const { id, image, name, title, quote } = person;
