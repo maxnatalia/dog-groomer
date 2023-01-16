@@ -1,7 +1,37 @@
-import Slider from "react-slick";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const Section = styled.section`
+    width: 100%;
+`;
+
+export const Button = styled.button`
+    border-radius: 50%;
+    position: absolute;
+    top: 200px;
+    transform: translateY(-50%);
+    background: grey;
+    color: white;
+    display: grid;
+    place-items: center;
+    border-color: transparent;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    padding: 15px;
+    z-index: -50;
+    cursor: pointer;
+    transition: all 0.3s linear;
+
+    &:hover {
+        background: lightgrey;
+    }
+
+    ${({ left }) => left && css`
+        left: 0;
+    `}
+
+    ${({ right }) => right && css`
+        right: 0;
+    `}
 `;
 
 export const Container = styled.div`
@@ -9,7 +39,8 @@ export const Container = styled.div`
     z-index: -50;
     position: relative;
     overflow: hidden;
-    padding-top: 50px;
+    padding: 100px;
+    margin: 0 auto;
     
     &::after {
         content: "";
@@ -24,31 +55,13 @@ export const Container = styled.div`
     }
 `;
 
-export const ReviewSlider = styled(Slider)`
-    width: 100%; 
-
-    .slick-track {
-		display: flex;
-		padding: 30px;
-		gap: 3rem;
-        
-	}
-	.slick-slide {
-        display: flex;
-		outline: none;
-	}
-
-	.slick-list {
-        overflow: hidden;
-	}
-`;
 
 export const Wrapper = styled.div`
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
 `;
 
-export const ImageWrapper = styled.div`
-
-`;
 
 export const Img = styled.img`
     z-index: 100;
@@ -74,21 +87,6 @@ export const Subtitle = styled.h2`
     }
 `;
 
-// export const Button = styled.button`
-//     background-color: #dc952a;
-//     color: white;
-//     font-weight: 700;
-//     border-radius: 20px;
-//     border: none;
-//     padding: 10px 20px;
-//     cursor: pointer;
-//     z-index: 500;
-
-//     @media (max-width: 768px) {
-//         font-size: 12px;
-//     }
-// `;
-
 export const ContentWrapper = styled.div`
     display: flex;
     flex-direction: column;
@@ -96,12 +94,4 @@ export const ContentWrapper = styled.div`
     align-items: flex-start;
     padding: 50px;
     max-width: 700px;
-`;
-
-export const WrapperTwo=styled.div`
-    display: flex;
-
-    @media (max-width: 992px) {
-        flex-direction: column;
-    }
 `;
