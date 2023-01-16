@@ -1,40 +1,33 @@
-import {Link} from "react-router-dom";
-import { carouselData, sliderSettings } from "./carouselData";
+import { carouselData } from "./carouselData";
 import {
     Section,
+    Button,
     Container,
     Title,
     Subtitle,
     Img,
-    Button,
     Wrapper,
-    ImageWrapper,
     ContentWrapper,
-    ReviewSlider, WrapperTwo
 } from "./styled";
 
 const Carousel = () => {
     return (
         <Section>
             <Container >
-                <ReviewSlider {...sliderSettings}>
-                    {carouselData.map((el, id) => (
-                        <Wrapper key={id}>
-                            <WrapperTwo>
-                                <ContentWrapper>
-                                    <Title>{el.title}</Title>
-                                    <Subtitle>{el.subtitle}</Subtitle>
-                                    {/* <Link to="/appointment">
-                                        <Button>{el.buttonText}</Button>
-                                    </Link> */}
-                                </ContentWrapper>
-                                <ImageWrapper>
-                                    <Img src={el.img} alt="" />
-                                </ImageWrapper>
-                            </WrapperTwo>
-                        </Wrapper>
-                    ))}
-                </ReviewSlider>
+                {carouselData.map((el, id) => (
+                    <Wrapper key={id}>
+                        <Button left>Preview</Button>
+                        <ContentWrapper>
+                            <Title>{el.title}</Title>
+                            <Subtitle>{el.subtitle}</Subtitle>
+                        </ContentWrapper>
+                        <Img src={el.img} alt="" />
+
+                        <Button right>Next</Button>
+                    </Wrapper>
+
+                ))}
+
             </Container>
         </Section>
     )
