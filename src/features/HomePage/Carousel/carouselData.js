@@ -29,16 +29,16 @@ export const carouselData = [
   },
 ];
 
-export const sliderSettings = {
-  arrows: false,
-  slidesToShow: 1,
-  focusOnselect: false,
-  accessability: false,
-  slidesToScroll: 1,
-  swipeToSlide: true,
-  autoplay: true,
-  speed: 2000,
-  autoplaySpeed: 3000,
-  dots: false,
-  infinite: true,
-};
+// export const sliderSettings = {
+//   arrows: false,
+//   slidesToShow: 1,
+//   focusOnselect: false,
+//   accessability: false,
+//   slidesToScroll: 1,
+//   swipeToSlide: true,
+//   autoplay: true,
+//   speed: 2000,
+//   autoplaySpeed: 3000,
+//   dots: false,
+//   infinite: true,
+// };
