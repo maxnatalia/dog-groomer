@@ -1,4 +1,4 @@
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./features/HomePage";
 import PricingPage from "./features/PricingPage";
 import AppointmentPage from "./features/AppointmentPage";
@@ -12,14 +12,14 @@ function App() {
   return (
     <BrowserRouter>
       <Navigation />
-      <Switch>
-        <Route path="/price"><PricingPage /></Route>
-        <Route path="/appointment"><AppointmentPage /></Route>
-        <Route path="/reminder"><Reminder /></Route>
-        <Route path="/questions"><Questions /></Route>
-        <Route path="/staff"><Staff /></Route>
-        <Route path="/"><HomePage /></Route>
-      </Switch>
+      <Routes>
+        <Route path="/appointment" element={<AppointmentPage />} />
+        <Route path="/price" element={<PricingPage />} />
+        <Route path="/reminder" element={<Reminder />} />
+        <Route path="/questions" element={<Questions />} />
+        <Route path="/staff" element={<Staff />} />
+        <Route path="/" element={<HomePage />} />
+      </Routes>
       <Footer />
     </BrowserRouter>
   );
