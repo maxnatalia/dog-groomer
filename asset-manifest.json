@@ -1,16 +1,23 @@
 {
   "files": {
-    "main.css": "/dog-groomer/static/css/main.073c9b0a.css",
-    "main.js": "/dog-groomer/static/js/main.c4adbff1.js",
+    "main.js": "/dog-groomer/static/js/main.01c8708b.js",
     "static/js/787.ac182e22.chunk.js": "/dog-groomer/static/js/787.ac182e22.chunk.js",
-    "static/media/logo.svg": "/dog-groomer/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/dog3.png": "/dog-groomer/static/media/dog3.711e92a568f78a9e801b.png",
+    "static/media/dog1.png": "/dog-groomer/static/media/dog1.6532f2da73eb71559e30.png",
+    "static/media/dog2.png": "/dog-groomer/static/media/dog2.9912c2e4d2b972e6c4b0.png",
+    "static/media/dog-contact.png": "/dog-groomer/static/media/dog-contact.9a0acc891a062d227b3d.png",
+    "static/media/dog3.jpg": "/dog-groomer/static/media/dog3.804d1781cb92cc8da63c.jpg",
+    "static/media/dog-categ-2.png": "/dog-groomer/static/media/dog-categ-2.ba7db388078543ebc191.png",
+    "static/media/dog-categ-3.png": "/dog-groomer/static/media/dog-categ-3.f785c631d3d35e92399f.png",
+    "static/media/dog-categ-1.png": "/dog-groomer/static/media/dog-categ-1.318829522e0ac63643b9.png",
+    "static/media/phone.svg": "/dog-groomer/static/media/phone.0302739606f054f52cc2a38936bf896c.svg",
+    "static/media/logo-white.svg": "/dog-groomer/static/media/logo-white.915526a9f528bdcb59442ec19ea69ed7.svg",
+    "static/media/logo.svg": "/dog-groomer/static/media/logo.6e730e2e7a76a690537b04f66664d73e.svg",
     "index.html": "/dog-groomer/index.html",
-    "main.073c9b0a.css.map": "/dog-groomer/static/css/main.073c9b0a.css.map",
-    "main.c4adbff1.js.map": "/dog-groomer/static/js/main.c4adbff1.js.map",
+    "main.01c8708b.js.map": "/dog-groomer/static/js/main.01c8708b.js.map",
     "787.ac182e22.chunk.js.map": "/dog-groomer/static/js/787.ac182e22.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.c4adbff1.js"
+    "static/js/main.01c8708b.js"
   ]
 }
