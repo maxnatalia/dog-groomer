@@ -1,11 +1,12 @@
 import { contentData } from "./contentData";
 import { Link } from "react-router-dom";
-import { Section, Container, ImageWrapper, Img, ContentWrapper, Title, Subtitle } from "./styled";
+import { Section, Header, Container, ImageWrapper, Img, ContentWrapper, Title, Subtitle } from "./styled";
 import { Button } from "../../.././common/Button/styled";
 
 const Content = () => {
     return (
         <Section>
+            <Header>General information</Header>
             {contentData.map((el, index) => (
                 <Container key={index}>
                     <ImageWrapper>
