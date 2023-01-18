@@ -82,7 +82,7 @@ export const Div = styled.div`
     background-color: #dc952a;
     border-radius: 50%;
     position: fixed;
-    bottom: 100px;
+    bottom: 250px;
     right: 20px;
     z-index: 2;
     padding: 10px;
