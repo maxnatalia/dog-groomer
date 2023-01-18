@@ -47,7 +47,7 @@ const Footer = () => {
                         Opening Hours: Mon - Sun: 10am - 6pm
                     </ContactHours>
                     <Link to="/appointment" >
-                        <Button>Get Appointment</Button>
+                        Get Appointment
                     </Link>
                 </ContactWrapper>
                 {visible ? <Div as="a" href="#">
