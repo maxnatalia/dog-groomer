@@ -1,16 +1,19 @@
 import { useState } from "react";
 import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai';
+import { Title } from "../../../common/Title/styled";
+import { Paragraph, Button } from "../styled";
 
-const Question = ({title, info}) => {
+
+const Question = ({ title, info }) => {
     const [show, setShow] = useState(false);
 
     return (
         <div>
-            <h3>{title}</h3>
-            {show && <p>{info}</p>}
-            <button onClick={() => setShow(!show)}>
+            <Title>{title}</Title>
+            {show && <Paragraph>{info}</Paragraph>}
+            <Button onClick={() => setShow(!show)}>
                 {show ? <AiOutlineMinus /> : <AiOutlinePlus />}
-            </button>
+            </Button>
         </div>
     )
 }
