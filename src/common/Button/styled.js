@@ -1,6 +1,8 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-export const Button = styled.button`
+export const Button = styled(Link)`
+    text-decoration: inherit;
     background-color: #dc952a;
     color: white;
     font-weight: 700;
