@@ -1,8 +1,10 @@
 import { useState, useEffect } from 'react';
 import { FiChevronRight, FiChevronLeft } from 'react-icons/fi';
 import data from './data';
-import { Section, Title, ImageDog, Wrapper, SectionCenter, Button, Image, IconQuote, Article } from './styled';
-import dog from "../../images/dog3.jpg"
+import { Section, ImageDog, Wrapper, SectionCenter, Button, Image, IconQuote, Article } from './styled';
+import { Header } from "../../common/Header/styled";
+import { Paragraph } from "../../common/Paragraph/styled";
+import dog from "./dog3.jpg";
 
 const Staff = () => {
     const [index, setIndex] = useState(0);
@@ -44,27 +46,23 @@ const Staff = () => {
 
     return (
         <Section>
-            <Title>Our Staff</Title>
+            <Header>Our Staff</Header>
             <Wrapper>
                 <ImageDog src={dog} alt="dog" />
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in sodales urna.
+                <Paragraph>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in sodales urna.
                     Cras pharetra orci non risus auctor suscipit ut sit amet nulla. Nulla tempor finibus nulla sit amet bibendum.
                     Suspendisse porttitor gravida porta. Mauris ac urna consectetur, gravida risus ut, bibendum nulla.
-                    Fusce suscipit orci nec lacus consequat, eu rhoncus nulla placerat. Sed nec dictum erat.
-                    Vivamus eu nulla felis. In posuere blandit cursus. In justo nunc, vulputate at massa eget, bibendum bibendum sapien.
-                    Fusce quis erat libero. Ut ut velit nec ex rutrum feugiat ut quis nisl.
-                    convallis dui eu libero tincidunt lobortis.</p>
+                    Fusce suscipit orci nec lacus consequat, eu rhoncus nulla placerat.</Paragraph>
             </Wrapper>
             <SectionCenter>
                 {data.map((person, personIndex) => {
                     const { id, image, name, title, quote } = person;
-
                     return (
                         <Article
                             activeSlide={index === personIndex}
                             key={id}>
                             <Image src={image} alt={name} />
-                            <h2>{name}</h2>
+                            <h3>{name}</h3>
                             <h3>{title}</h3>
                             <p>{quote}</p>
                             <IconQuote />
