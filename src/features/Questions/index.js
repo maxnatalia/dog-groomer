@@ -1,9 +1,10 @@
 import data from "./data";
-import { Section, Container, Paragraph } from "./styled";
+import { Section, Container } from "./styled";
 import Question from "./Question";
 import { Header } from "../../common/Header/styled";
 import { Button } from "../../common/Button/styled";
 import { Title } from "../../common/Title/styled";
+import { Paragraph } from "../../common/Paragraph/styled";
 
 const Questions = () => {
 

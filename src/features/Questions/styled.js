@@ -11,14 +11,6 @@ export const Container = styled.div`
     margin-bottom: 20px;
 `;
 
-export const Paragraph = styled.p`
-    font-size: 22px;
-
-    @media (max-width: 767px) {
-        font-size: 18px;
-    }
-`;
-
 export const Button = styled.button`
     background-color: #dc952a;
     color: white;

@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai';
 import { Title } from "../../../common/Title/styled";
-import { Paragraph, Button } from "../styled";
+import { Paragraph } from "../../../common/Paragraph/styled";
+import { Button } from "../styled";
 
 
 const Question = ({ title, info }) => {
