@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.js": "/dog-groomer/static/js/main.5e1ac578.js",
+    "main.js": "/dog-groomer/static/js/main.cd7a2176.js",
     "static/js/787.ac182e22.chunk.js": "/dog-groomer/static/js/787.ac182e22.chunk.js",
     "static/media/dog3.png": "/dog-groomer/static/media/dog3.711e92a568f78a9e801b.png",
     "static/media/dog1.png": "/dog-groomer/static/media/dog1.6532f2da73eb71559e30.png",
     "static/media/dog2.png": "/dog-groomer/static/media/dog2.9912c2e4d2b972e6c4b0.png",
     "static/media/dog-contact.png": "/dog-groomer/static/media/dog-contact.9a0acc891a062d227b3d.png",
     "static/media/dog3.jpg": "/dog-groomer/static/media/dog3.804d1781cb92cc8da63c.jpg",
+    "static/media/dog-appointment.png": "/dog-groomer/static/media/dog-appointment.79f633f797f58be23109.png",
     "static/media/dog-categ-4.png": "/dog-groomer/static/media/dog-categ-4.572aadd2c62f94bdb645.png",
     "static/media/dog-categ-2.png": "/dog-groomer/static/media/dog-categ-2.ba7db388078543ebc191.png",
     "static/media/dog-categ-3.png": "/dog-groomer/static/media/dog-categ-3.f785c631d3d35e92399f.png",
@@ -16,10 +17,10 @@
     "static/media/logo-white.svg": "/dog-groomer/static/media/logo-white.915526a9f528bdcb59442ec19ea69ed7.svg",
     "static/media/logo.svg": "/dog-groomer/static/media/logo.6e730e2e7a76a690537b04f66664d73e.svg",
     "index.html": "/dog-groomer/index.html",
-    "main.5e1ac578.js.map": "/dog-groomer/static/js/main.5e1ac578.js.map",
+    "main.cd7a2176.js.map": "/dog-groomer/static/js/main.cd7a2176.js.map",
     "787.ac182e22.chunk.js.map": "/dog-groomer/static/js/787.ac182e22.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.5e1ac578.js"
+    "static/js/main.cd7a2176.js"
   ]
 }
