@@ -1,4 +1,5 @@
-import { Container, ServiceList, List, Price, Category } from "./styled";
+import { Container, List, Price, Category } from "./styled";
+import { Tile } from "../../../common/Tile/styled";
 
 const Service = ({ services }) => {
     return (
@@ -6,7 +7,7 @@ const Service = ({ services }) => {
             {services.map((service, index) => {
                 const { name, price, list } = service;
                 return (
-                    <ServiceList key={index}>
+                    <Tile key={index}>
                         <Price>${price}</Price>
                         <Category>{name}</Category>
                         {list.map((item, index) => {
@@ -16,7 +17,7 @@ const Service = ({ services }) => {
                                 </List>
                             )
                         })}
-                    </ServiceList>
+                    </Tile>
                 )
             })}
         </Container>

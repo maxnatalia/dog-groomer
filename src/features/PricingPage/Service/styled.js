@@ -10,14 +10,6 @@ export const Container = styled.div`
     width: 100%;
 `;
 
-export const ServiceList = styled.div`
-    padding: 5px;
-    width: 250px;
-    border-radius: 5px;
-    border: 2px solid orange;
-    box-shadow: 4px 6px 5px orange;
-`;
-
 export const List = styled.ul`
     list-style: none;
     text-align: left;
