@@ -7,12 +7,6 @@ export const Section = styled.section`
     max-width: 1170px;
 `;
 
-export const Title = styled.h2`
-    text-align: center;
-    font-size: 40px;
-    margin: 0;
-`;
-
 export const Wrapper = styled.div`
     display: flex;
     gap: 20px;
@@ -41,27 +35,27 @@ export const SectionCenter = styled.div`
     text-align: center;
     position: relative;
     display: flex;
-    /* overflow: hidden; */
+    overflow: hidden;
 `;
 
 export const Button = styled.button`
     position: absolute;
     top: 200px;
     transform: translateY(-50%);
-    background: grey;
+    background: orange;
     color: white;
-    display: grid;
-    place-items: center;
     border-color: transparent;
-    font-size: 1rem;
-    border-radius: 0.25rem;
-    padding: 15px;
-    z-index: -50;
-    cursor: pointer;
+    font-size: 18px;
+    border-radius: 50%;
+    padding: 10px;
+
     transition: all 0.3s linear;
+    cursor: pointer;
 
     &:hover {
-        background: lightgrey;
+        background: beige;
+        color: orange;
+        border: 2px solid orange;
     }
 
     ${({ left }) => left && css`
@@ -79,7 +73,7 @@ export const Image = styled.img`
     width: 150px;
     height: 150px;
     object-fit: cover;
-    border: 4px solid gray;
+    border: 4px solid orange;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 `;
 
