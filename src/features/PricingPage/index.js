@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { dataServicePrice } from "./dataServicePrice";
 import { Section, Wrapper, Category, PriceContainer, CategoryName, CategoryWeight } from "./styled";
 import { Header } from "../../common/Header/styled";
+import { Title } from "../../common/Title/styled";
 import Service from "./Service";
 
 
@@ -23,8 +24,7 @@ const PricingPage = () => {
     return (
         <Section>
             <Header>Prices</Header>
-            <h3>Choose your dog category</h3>
-            <h4>How big your dog is?</h4>
+            <Title>Choose your dog category - How big your dog is?</Title>
             <Wrapper>
                 {dataServicePrice.map((service, index) => {
                     const { image, name, dogCategory } = service;
