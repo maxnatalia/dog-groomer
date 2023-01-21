@@ -22,6 +22,7 @@ export const Category = styled.div`
     &:hover {
         transform: scale(1.1);
         border-bottom: 6px solid orange;
+        text-shadow: 4px 4px 6px orange;
     }
 
     ${({ activeDog }) => activeDog && css`
