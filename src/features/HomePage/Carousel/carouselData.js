@@ -9,36 +9,19 @@ export const carouselData = [
     subtitle:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer.',
     img: dog1,
-    buttonText: 'Get an appointment',
   },
   {
     id: 2,
-    title: 'Lorem ipsum dolor sit.',
+    title: 'The Groom Philosophy',
     subtitle:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer.',
+      'Lorem ipsum consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer.Lorem ipsum dolor sit amet.',
     img: dog2,
-    buttonText: 'Get an appointment',
   },
   {
     id: 3,
-    title: 'Nunc odio in et, lectus sit.',
+    title: 'Why choose us?',
     subtitle:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer.',
+      'Lorem ipsum dolor sit amet, consectetur adipiscing. Nunc odio in et, lectus sit lorem id integer.',
     img: dog3,
-    buttonText: 'Get an appointment',
   },
 ];
-
-// export const sliderSettings = {
-//   arrows: false,
-//   slidesToShow: 1,
-//   focusOnselect: false,
-//   accessability: false,
-//   slidesToScroll: 1,
-//   swipeToSlide: true,
-//   autoplay: true,
-//   speed: 2000,
-//   autoplaySpeed: 3000,
-//   dots: false,
-//   infinite: true,
-// };
