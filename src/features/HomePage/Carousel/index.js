@@ -1,35 +1,52 @@
+import { useState, useEffect } from "react"
 import { carouselData } from "./carouselData";
+import { Header } from "../../../common/Header/styled";
+import { Paragraph } from "../../../common/Paragraph/styled";
 import {
-    Section,
-    Button,
+    SectionHero,
     Container,
-    Title,
-    Subtitle,
     Img,
     Wrapper,
     ContentWrapper,
 } from "./styled";
 
 const Carousel = () => {
+
+    const [index, setIndex] = useState(0);
+
+    useEffect(() => {
+        let slider = setInterval(() => {
+            setIndex((oldIndex) => {
+                let index = oldIndex + 1
+                if (index > carouselData.length - 1) {
+                    index = 0
+                }
+                return index
+            })
+        }, 3000)
+        return () => {
+            clearInterval(slider);
+        }
+    }, [index])
+
     return (
-        <Section>
-            <Container >
+        <SectionHero>
+            <Container>
                 {carouselData.map((el, id) => (
-                    <Wrapper key={id}>
-                        <Button left>Preview</Button>
+                    <Wrapper
+                        activeSlide={index === id}
+                        key={id}>
                         <ContentWrapper>
-                            <Title>{el.title}</Title>
-                            <Subtitle>{el.subtitle}</Subtitle>
+                            <Header>{el.title}</Header>
+                            <Paragraph hero>{el.subtitle}</Paragraph>
                         </ContentWrapper>
-                        <Img src={el.img} alt="" />
-
-                        <Button right>Next</Button>
+                        <div>
+                            <Img src={el.img} alt="" />
+                        </div>
                     </Wrapper>
-
                 ))}
-
             </Container>
-        </Section>
+        </SectionHero>
     )
 };
 
