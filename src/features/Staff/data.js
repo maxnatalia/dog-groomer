@@ -6,25 +6,25 @@ const people = [
         name: 'maria ferguson',
         title: 'office manager',
         quote:
-            'Fingerstache umami squid, kinfolk subway tile selvage tumblr man braid viral kombucha gentrify fanny pack raclette pok pok mustache.',
+            'Fingerstache Nulla tempor finibus nulla sit amet bibendum. Suspendisse porttitor gravida porta. Mauris ac urna consectetur, gravida risus ut, bibendum nulla. Fusce suscipit orci nec lacus consequat, eu rhoncus nulla placerat.',
     },
     {
         id: 2,
         image:
             'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883417/person-3_ipa0mj.jpg',
         name: 'john doe',
-        title: 'regular guy',
+        title: 'senior groomer',
         quote:
-            'Gastropub sustainable tousled prism occupy. Viral XOXO roof party brunch actually, chambray listicle microdosing put a bird on it paleo subway tile squid umami.',
+            'Nulla tempor finibus nulla sit amet bibendum. Suspendisse porttitor gravida porta. Mauris ac urna consectetur, gravida risus ut, bibendum nulla. Fusce suscipit orci nec lacus consequat, eu rhoncus nulla placerat.',
     },
     {
         id: 3,
         image:
             'https://res.cloudinary.com/diqqf3eq2/image/upload/v1595959121/person-1_aufeoq.jpg',
         name: 'peter smith',
-        title: 'product designer',
+        title: 'groomer',
         quote:
-            'Drinking vinegar polaroid street art echo park, actually semiotics next level butcher master cleanse hammock flexitarian ethical paleo.',
+            'Nulla tempor finibus nulla sit amet bibendum. Suspendisse porttitor gravida porta. Mauris ac urna consectetur, gravida risus ut, bibendum nulla. Fusce suscipit orci nec lacus consequat, eu rhoncus nulla placerat.',
     },
     {
         id: 4,
@@ -33,7 +33,7 @@ const people = [
         name: 'susan andersen',
         title: 'the boss',
         quote:
-            'Marfa af yr 3 wolf moon kogi, readymade distillery asymmetrical seitan kale chips fingerstache cloud bread mustache twee messenger bag. ',
+            'Marfa Nulla tempor finibus nulla sit amet bibendum. Suspendisse porttitor gravida porta. Mauris ac urna consectetur, gravida risus ut, bibendum nulla. Fusce suscipit orci nec lacus consequat, eu rhoncus nulla placerat. ',
     },
 ];
 
