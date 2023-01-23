@@ -1,7 +1,9 @@
 import { contentData } from "./contentData";
-import { Link } from "react-router-dom";
-import { Section, Header, Container, ImageWrapper, Img, ContentWrapper, Title, Subtitle } from "./styled";
+import { Section, Container, ImageWrapper, Img, ContentWrapper } from "./styled";
+import { Header } from "../../../common/Header/styled";
 import { Button } from "../../.././common/Button/styled";
+import { Title } from "../../.././common/Title/styled";
+import { Paragraph } from "../../.././common/Paragraph/styled";
 
 const Content = () => {
     return (
@@ -16,14 +18,14 @@ const Content = () => {
                         <Title>
                             {el.title}
                         </Title>
-                        <Subtitle>
-                            {el.subtitle}
-                        </Subtitle>
-                        <Link to={el.buttonTO}>
-                            <Button>
-                                {el.buttonText}
-                            </Button>
-                        </Link>
+                        <div>
+                            <Paragraph>
+                                {el.subtitle}
+                            </Paragraph>
+                        </div>
+                        <Button to={el.buttonTO}>
+                            {el.buttonText}
+                        </Button>
                     </ContentWrapper>
                 </Container>
             ))}
