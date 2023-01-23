@@ -12,10 +12,6 @@ export const navigationData = [
 		text: 'Get Appointment',
 	},
 	{
-		to: "/reminder",
-		text: 'Reminder',
-	},
-	{
 		to: "/questions",
 		text: 'Q&A',
 	},
