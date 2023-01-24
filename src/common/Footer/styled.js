@@ -1,7 +1,8 @@
-import { AiOutlineArrowUp } from "react-icons/ai";
 import styled from "styled-components";
 
 export const StyledFooter = styled.footer`
+    background-color: beige;
+    margin-top: 20px;
 `;
 
 export const Container = styled.div`
@@ -48,7 +49,7 @@ export const ImgContact = styled.img`
 `;
 
 export const SocialsContainer = styled.div`
-    background-color: #dc952a;
+    background-color: rgb(254,173,22);
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -78,19 +79,24 @@ export const SocialIcon = styled.a`
     margin: 0;
 `;
 
-export const Div = styled.div`
-    background-color: #dc952a;
+export const Scroll = styled.button`
+    text-decoration: none;
+    color: #000958;
+    font-weight: 600;
+    font-size: 22px;
+    background-color: rgb(254,173,22);
+    border: 2px solid #000958;
     border-radius: 50%;
     position: fixed;
     bottom: 250px;
     right: 20px;
     z-index: 2;
-    padding: 10px;
+    padding: 10px 15px;
+    transition: 1s ease-in-out;
     cursor: pointer;
-`;
 
-export const IconArrow = styled(AiOutlineArrowUp)`
-    color: white;
-    font-size: 18px;
-    width: 22px;
+    &:hover {
+        background-color: #000958;
+        color: rgb(254,173,22);
+    }
 `;

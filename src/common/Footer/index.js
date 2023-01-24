@@ -13,15 +13,13 @@ import {
     SocialIcon,
     ImgContact,
     PhoneIcon,
-    Div,
-    IconArrow
+    Scroll
 } from "./styled";
 import contact from "./dog-contact.png";
 import iconDog from "./logo-white.svg";
 import tel from "./phone.svg";
 import { social } from "./footerData";
-import { Button } from "../Button/styled";
-import { Link } from "react-router-dom";
+import { Button } from "../../common/Button/styled";
 import { useState } from "react";
 
 const Footer = () => {
@@ -46,13 +44,13 @@ const Footer = () => {
                     <ContactHours>
                         Opening Hours: Mon - Sun: 10am - 6pm
                     </ContactHours>
-                    <Link to="/appointment" >
+                    <Button to="/appointment">
                         Get Appointment
-                    </Link>
+                    </Button>
                 </ContactWrapper>
-                {visible ? <Div as="a" href="#">
-                    <IconArrow />
-                </Div> : null}
+                {visible ? <Scroll title="Scroll TOP" as="a" href="#">
+                    T
+                </Scroll> : null}
             </Container>
             <SocialsContainer>
                 <Img src={iconDog} alt="" />
