@@ -13,5 +13,6 @@ export const GlobalStyle = createGlobalStyle`
         font-family: 'Roboto', sans-serif;
         overflow-x: hidden;
         margin: 0 auto;
+        color: #000958;
     }
 `;
