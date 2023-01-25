@@ -33,8 +33,8 @@ export const Button = styled.button`
 
     ${({ main }) => main && css`
         position: fixed;
-        top: 100px;
-        left: 10px;
+        top: 0;
+        left: 200px;
         border-radius: 50%;
         border: 2px solid #000958;
         color: #000958;
@@ -61,7 +61,12 @@ export const Form = styled.form`
 
 export const Input = styled.input`
     padding: 10px;
+    margin-top: 10px;
     width: 100%;
     border-radius: 15px;
     border: 2px solid rgb(254,173,22);
+
+    ${({ error }) => error && css`
+        border: 4px solid crimson;
+    `}
 `;
