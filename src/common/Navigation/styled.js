@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 export const Nav = styled.nav`
-    background-color: ${({ colorNav }) => colorNav ? "orange" : "beige"};
+    background-color: ${({ colorNav }) => colorNav ? "rgb(254,173,22)" : "beige"};
     position: absolute;
     top: 0;
     width: 100%;
@@ -46,7 +46,7 @@ export const NaVMenu = styled.ul`
     @media (max-width: 768px) {
         opacity: ${({ show }) => show ? "1" : "0"};
         visibility: ${({ show }) => show ? "visible" : "hidden"};
-        background-color: orange;
+        background-color: rgb(254,173,22);
         margin-top: 0;
         width: 100%;
         height: 80vh;
