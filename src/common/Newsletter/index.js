@@ -1,7 +1,6 @@
 import { StyledNewsletter, Button, Container, Form, Input } from "./styled";
 import { Header } from "../Header/styled";
 import { Title } from "../Title/styled";
-import { Paragraph } from "../Paragraph/styled";
 import { useState } from "react";
 import { useEffect } from "react";
 
@@ -49,13 +48,20 @@ const Newsletter = () => {
                     <Container>
                         <Header>Newsletter</Header>
                         <Title>You can suscribe our Newsletter</Title>
-                        <Paragraph>If you want to know first about promocion</Paragraph>
                         <Form onSubmit={onFormSubmit}>
-                            <Input type="email" placeholder="Add your email..." value={email} onChange={(e) => setEmail(e.target.value)} />
+                            <Input type="email" placeholder="Add your email..." error={error} value={email} onChange={(e) => setEmail(e.target.value)} />
                             <Button type="submit">Suscribe</Button>
                         </Form>
-                        <Button onClick={() => setNewsletter(false)}>Close</Button>
-                        {error && <Title>Please provide your email</Title>}
+                        <Button
+                            onClick={() => {
+                                setNewsletter(false);
+                                setError(false)
+                            }}>
+                            Close
+                        </Button>
+                        {error &&
+                            <Title>Please provide your email</Title>
+                        }
                     </Container>
                 </StyledNewsletter >)
                 :
