@@ -55,7 +55,7 @@ const Footer = () => {
             <SocialsContainer>
                 <Img src={iconDog} alt="" />
                 <Copywrite>
-                    © 2022 Dog Groomer | All Rights Reserved
+                    © 2023 Dog Groomer | All Rights Reserved
                 </Copywrite>
                 <ContainerSocial>
                     {social.map((el, index) => (
