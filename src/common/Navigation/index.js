@@ -13,7 +13,7 @@ const Navigation = () => {
     const [colorNav, setColorNav] = useState(false);
 
     const changeColorNav = () => {
-        if(window.scrollY >= 80) {
+        if (window.scrollY >= 80) {
             setColorNav(true)
         } else {
             setColorNav(false)
@@ -23,25 +23,27 @@ const Navigation = () => {
     window.addEventListener("scroll", changeColorNav)
 
     return (
-        <Nav colorNav={colorNav} >
-            <Container>
-                <LogoWrapper>
-                    <Logo src={logo} alt="" /><p>Dog Groomer</p>
-                </LogoWrapper>
-                <MenuMobile onClick={handleClick} >
-                    {show ? <MenuClose /> : <MenuBars />}
-                </MenuMobile>
-                <NaVMenu show={show} >
-                    {navigationData.map((item, index) => (
-                        <NavItem key={index}>
-                            <NavLinks to={item.to} onClick={() => setShow(false)} >
-                                {item.text}
-                            </NavLinks>
-                        </NavItem>
-                    ))}
-                </NaVMenu>
-            </Container>
-        </Nav>
+        <>
+            <Nav colorNav={colorNav}>
+                <Container>
+                    <LogoWrapper to="/">
+                        <Logo src={logo} alt="" /><p>Dog <br />Groomer</p>
+                    </LogoWrapper>
+                    <MenuMobile onClick={handleClick} >
+                        {show ? <MenuClose /> : <MenuBars />}
+                    </MenuMobile>
+                    <NaVMenu show={show} >
+                        {navigationData.map((item, index) => (
+                            <NavItem key={index}>
+                                <NavLinks to={item.to} onClick={() => setShow(false)} >
+                                    {item.text}
+                                </NavLinks>
+                            </NavItem>
+                        ))}
+                    </NaVMenu>
+                </Container>
+            </Nav>
+        </>
     )
 };
 
