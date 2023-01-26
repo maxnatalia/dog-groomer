@@ -26,7 +26,7 @@ export const Image = styled.img`
 export const Fieldset = styled.fieldset`
     margin-top: 20px;
     background-color: beige;
-    border: 2px solid orange;
+    border: 2px solid rgb(254,173,22);
     border-radius: 15px;
     display: flex;
     flex-direction: column;
@@ -49,7 +49,7 @@ export const Input = styled.input`
     padding: 15px;
     margin-top: 5px;
     border-radius: 15px;
-    border: 2px solid orange;
+    border: 2px solid rgb(254,173,22);
     box-shadow: 1px 1px 2px gray;
 `;
 
@@ -57,7 +57,7 @@ export const Textarea = styled.textarea`
     width: 100%;
     padding: 15px;
     border-radius: 15px;
-    border: 2px solid orange;
+    border: 2px solid rgb(254,173,22);
     box-shadow: 1px 1px 2px gray;
 `;
 
@@ -66,16 +66,16 @@ export const Button = styled.button`
     font-size: 20px;
     font-weight: 600;
     letter-spacing: 2px;
-    background-color: orange;
+    background-color: rgb(254,173,22);
     padding: 15px;
     border-radius: 15px;
-    border: 2px solid orange;
+    border: 2px solid rgb(254,173,22);
     transition: 1s ease-in-out;
     cursor: pointer;
 
     &:hover {
         background-color: white;
-        color: orange;
+        color: rgb(254,173,22);
     }
 `;
 
@@ -84,10 +84,14 @@ export const ModalContent = styled.h4`
     margin: 20px auto;
     letter-spacing: 1.7px;
     text-align: center;
-    color: orange;
+    color: rgb(254,173,22);
     text-shadow: 4px 4px 6px gray;
 
     @media (max-width: 767px) {
         font-size: 30px;
     }
+`;
+
+export const Label = styled.label`
+    padding: 20px;
 `;

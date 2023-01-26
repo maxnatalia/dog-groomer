@@ -2,7 +2,7 @@ import { Header } from "../../common/Header/styled";
 import { Tile } from "../../common/Tile/styled";
 import { Title } from "../../common/Title/styled";
 import { Paragraph } from "../../common/Paragraph/styled";
-import { Container, Section, Fieldset, Form, Span, Input, Textarea, Button, Image, ModalContent } from "./styled";
+import { Container, Section, Fieldset, Form, Span, Input, Textarea, Button, Image, ModalContent, Label } from "./styled";
 import { dataContact } from "./dataContact";
 import dogApp from "./dog-appointment.png";
 import { useState } from "react";
@@ -61,31 +61,27 @@ const AppointmentPage = () => {
             <Header>Get an Appointment</Header>
             <Form onSubmit={onFormSubmit}>
                 <Fieldset>
-                    <p>
-                        <label><Span>Full Name:</Span>
-                            <Input type="text" name="name" value={values.name} onChange={handleOnChange} />
-                        </label>
-                    </p>
-                    <p>
-                        <label><Span>E-mail address:</Span>
-                            <Input type="email" name="email" value={values.email} onChange={handleOnChange} />
-                        </label>
-                    </p>
-                    <p>
-                        <label><Span>Phone number:</Span>
-                            <Input type="tel" name="phone" value={values.phone} onChange={handleOnChange} />
-                        </label>
-                    </p>
-                    <p>
-                        <label><Span>Message:</Span>
-                            <Textarea name="msg" value={values.msg} onChange={handleOnChange} />
-                        </label>
-                    </p>
+                    {modal.state &&
+                        <ModalContent>{modal.content}</ModalContent>}
+                    <Label>
+                        <Span>Full Name:</Span>
+                        <Input type="text" name="name" value={values.name} onChange={handleOnChange} />
+                    </Label>
+                    <Label>
+                        <Span>E-mail address:</Span>
+                        <Input type="email" name="email" value={values.email} onChange={handleOnChange} />
+                    </Label>
+                    <Label>
+                        <Span>Phone number:</Span>
+                        <Input type="tel" name="phone" value={values.phone} onChange={handleOnChange} />
+                    </Label>
+                    <Label>
+                        <Span>Message:</Span>
+                        <Textarea name="msg" value={values.msg} onChange={handleOnChange} />
+                    </Label>
                     <Button type="submit">Send Form</Button>
                 </Fieldset>
             </Form>
-            {modal.state &&
-                <ModalContent>{modal.content}</ModalContent>}
         </Section>
     )
 };
