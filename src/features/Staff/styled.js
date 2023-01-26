@@ -23,7 +23,7 @@ export const ImageDog = styled.img`
     border-radius: 50%;
     aspect-ratio: 1;
     object-fit: cover;
-    border: 6px solid orange;
+    border: 6px solid rgb(254,173,22);
 `;
 
 export const SectionCenter = styled.div`
@@ -42,20 +42,20 @@ export const Button = styled.button`
     position: absolute;
     top: 200px;
     transform: translateY(-50%);
-    background: orange;
+    background: rgb(254,173,22);
     color: white;
     border-color: transparent;
     font-size: 18px;
     border-radius: 50%;
     padding: 10px;
-
-    transition: all 0.3s linear;
+    transition: all 1s ease-in-out;
     cursor: pointer;
+    box-shadow: 1px 3px 2px gray;
 
     &:hover {
-        background: beige;
-        color: orange;
-        border: 2px solid orange;
+        color: #000958;
+        border: 2px solid #000958;
+        box-shadow: 1px 4px 2px gray;
     }
 
     ${({ left }) => left && css`
@@ -73,14 +73,14 @@ export const Image = styled.img`
     width: 150px;
     height: 150px;
     object-fit: cover;
-    border: 4px solid orange;
+    border: 4px solid rgb(254,173,22);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 `;
 
 export const IconQuote = styled(FaQuoteRight)`
     font-size: 3rem;
     margin-top: 1rem;
-    color: orange;
+    color: rgb(254,173,22);
     z-index: -50;
 `;
 
