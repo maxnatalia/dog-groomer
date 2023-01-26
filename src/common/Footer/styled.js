@@ -77,6 +77,14 @@ export const SocialIcon = styled.a`
     padding: 10px;
     border-radius: 50%;
     margin: 0;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+    box-shadow: 1px 3px 2px gray;
+
+    &:hover {
+        color: #000958;
+        border-color: #000958;
+    }
 `;
 
 export const Scroll = styled.button`
@@ -94,9 +102,11 @@ export const Scroll = styled.button`
     padding: 10px 15px;
     transition: 1s ease-in-out;
     cursor: pointer;
+    box-shadow: 1px 3px 2px gray;
 
     &:hover {
         background-color: #000958;
         color: rgb(254,173,22);
+        box-shadow: 1px 4px 2px gray;
     }
 `;
