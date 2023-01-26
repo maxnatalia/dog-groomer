@@ -7,7 +7,7 @@ export const Title = styled.h3`
     letter-spacing: 1.7px;
     text-align: center;
     color: gray;
-    text-shadow: 4px 4px 6px orange;
+    text-shadow: 4px 4px 6px rgb(254,173,22);
 
     @media (max-width: 767px) {
         font-size: 22px;
