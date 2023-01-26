@@ -66,7 +66,7 @@ const Newsletter = () => {
                 </StyledNewsletter >)
                 :
                 (<Button
-                    main
+                    special
                     title="Newsletter"
                     onClick={() => setNewsletter(true)}>
                     N

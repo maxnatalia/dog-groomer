@@ -25,13 +25,15 @@ export const Button = styled.button`
     margin-top: 20px;
     transition: 1s ease-in-out;
     cursor: pointer;
+    box-shadow: 1px 3px 2px gray;
 
     &:hover {
         background-color: white;
         color: rgb(254,173,22);
+        box-shadow: 1px 4px 2px gray;
     }
 
-    ${({ main }) => main && css`
+    ${({ special }) => special && css`
         position: fixed;
         top: 0;
         left: 200px;
