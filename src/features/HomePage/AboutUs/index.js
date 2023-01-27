@@ -13,11 +13,11 @@ const AboutUs = () => {
                     <Image src={dogImg} alt="dog img" />
                 </Wrapper>
                 <List>
-                    <Item>Experienced, Professional Dog Groomer</Item>
-                    <Item>Grooming dogs since 2010</Item>
-                    <Item>One-to-one attention for your dog</Item>
-                    <Item>Homely atmosphere</Item>
-                    <Item>Dogs aren’t put in cages or tied up</Item>
+                    <Item>🐶 Experienced, Professional Dog Groomer</Item>
+                    <Item>🐶 Grooming dogs since 2010</Item>
+                    <Item>🐶 One-to-one attention for your dog</Item>
+                    <Item>🐶 Homely atmosphere</Item>
+                    <Item>🐶 Dogs aren’t put in cages or tied up</Item>
                 </List>
             </Container>
         </section>

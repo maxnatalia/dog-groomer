@@ -16,7 +16,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Image = styled.img`
-    width: 300px;
+    width: 200px;
 `;
 
 export const Container = styled.div`
@@ -27,11 +27,10 @@ export const Container = styled.div`
 `;
 
 export const Item = styled.li`
-   
     line-height: 2;
     font-size: 22px;
     font-weight: 400;
-    text-shadow: 4px 4px 6px orange;
+    text-shadow: 4px 4px 6px rgb(254,173,22);
 
     @media (max-width: 767px) {
         font-size: 18px;
