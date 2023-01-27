@@ -1,4 +1,4 @@
-import { Nav, Container, LogoWrapper, Logo, NaVMenu, NavItem, NavLinks, MenuBars, MenuMobile, MenuClose } from "./styled";
+import { Nav, Container, LogoWrapper, Logo, NaVMenu, NavItem, NavLinks, MenuBars, MenuClose } from "./styled";
 import logo from "./logo.svg";
 import { navigationData } from "./navigationData";
 import { useState } from "react";
@@ -29,9 +29,9 @@ const Navigation = () => {
                     <LogoWrapper to="/">
                         <Logo src={logo} alt="" /><p>Dog <br />Groomer</p>
                     </LogoWrapper>
-                    <MenuMobile onClick={handleClick} >
+                    <div onClick={handleClick} >
                         {show ? <MenuClose /> : <MenuBars />}
-                    </MenuMobile>
+                    </div>
                     <NaVMenu show={show} >
                         {navigationData.map((item, index) => (
                             <NavItem key={index}>

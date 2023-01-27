@@ -16,7 +16,6 @@ export const Container = styled.div`
     display: flex;
     justify-content: flex-end;
     align-items: center;
-
 `;
 
 export const LogoWrapper = styled(Link)`
@@ -33,7 +32,7 @@ export const LogoWrapper = styled(Link)`
 `;
 
 export const Logo = styled.img`
-
+    padding: 10px;
 `;
 
 export const NaVMenu = styled.ul`
@@ -49,18 +48,17 @@ export const NaVMenu = styled.ul`
         background-color: rgb(254,173,22);
         margin-top: 0;
         width: 100%;
-        height: 80vh;
+        height: 100vh;
         display: ${({ show }) => show ? "grid" : "none"};
         grid-template-columns: 1fr;
         justify-content: center;
-        align-items: center;
+        align-items: flex-end;
     }
 `;
 
 export const NavItem = styled.li`
     display: flex;
     justify-content: center;
-   
 `;
 
 export const NavLinks = styled(NavLink)`
@@ -82,8 +80,7 @@ export const NavLinks = styled(NavLink)`
         }
     }
 `;
-export const MenuMobile = styled.div`
-`;
+
 export const MenuBars = styled(FaBars)`
     display: none;
 
