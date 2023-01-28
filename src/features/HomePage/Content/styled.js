@@ -6,24 +6,20 @@ export const Section = styled.section`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   
 `;
 
 export const Container = styled.div`
-    padding: 10px;
+    max-width: 900px;
+    padding: 20px;
     display: flex;
     justify-items: center;
     align-items: center;
     gap: 40px;
 
     @media (max-width: 767px) {
-        gap: 0
-    }
-    
-`;
-
-export const ImageWrapper = styled.div`
-
+        gap: 0;
+        flex-direction: column;
+    } 
 `;
 
 export const Img = styled.img`
