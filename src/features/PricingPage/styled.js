@@ -17,17 +17,17 @@ export const Category = styled.div`
     padding: 28px;
     cursor: pointer;
     transition: 1s ease-in-out;
-    border-bottom: 2px solid orange;
+    border-bottom: 2px solid rgb(254,173,22);
 
     &:hover {
         transform: scale(1.1);
-        border-bottom: 6px solid orange;
-        text-shadow: 4px 4px 6px orange;
+        border-bottom: 6px solid rgb(254,173,22);
+        text-shadow: 4px 4px 6px rgb(254,173,22);
     }
 
     ${({ activeDog }) => activeDog && css`
         transform: scale(1.1);
-        border-bottom: 6px solid orange;
+        border-bottom: 6px solid rgb(254,173,22);
     `}
 `;
 
@@ -40,7 +40,7 @@ export const CategoryName = styled.h3`
     font-size: 30px;
 
     ${({ activeDog }) => activeDog && css`
-        text-shadow: 4px 4px 6px orange;
+        text-shadow: 4px 4px 6px rgb(254,173,22);
     `}
 `;
 
@@ -48,6 +48,6 @@ export const CategoryWeight = styled.p`
     font-size: 20px;
 
     ${({ activeDog }) => activeDog && css`
-        text-shadow: 4px 4px 6px orange;
+        text-shadow: 4px 4px 6px rgb(254,173,22);
     `}
 `;

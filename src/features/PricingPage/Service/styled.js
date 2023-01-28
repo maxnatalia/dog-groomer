@@ -17,11 +17,11 @@ export const List = styled.ul`
 
 export const Price = styled.h3`
     font-size: 40px;
-    text-shadow: 4px 4px 6px orange;
+    text-shadow: 4px 4px 6px rgb(254,173,22);
 `;
 
 export const Category = styled.p`
     font-size: 30px;
     font-weight: 600;
-    text-shadow: 4px 4px 6px orange;
+    text-shadow: 4px 4px 6px rgb(254,173,22);
 `;
