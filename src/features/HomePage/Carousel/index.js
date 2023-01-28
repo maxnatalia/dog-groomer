@@ -8,6 +8,7 @@ import {
     Img,
     Wrapper,
     ContentWrapper,
+    ImageContainer
 } from "./styled";
 
 const Carousel = () => {
@@ -40,9 +41,9 @@ const Carousel = () => {
                             <Header>{el.title}</Header>
                             <Paragraph hero>{el.subtitle}</Paragraph>
                         </ContentWrapper>
-                        <div>
+                        <ImageContainer>
                             <Img src={el.img} alt="" />
-                        </div>
+                        </ImageContainer>
                     </Wrapper>
                 ))}
             </Container>
