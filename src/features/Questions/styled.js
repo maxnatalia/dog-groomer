@@ -18,12 +18,12 @@ export const Button = styled.button`
     padding: 10px;
     margin: 20px auto;
     cursor: pointer;
-    border: 2px solid orange;
+    border: 2px solid rgb(254,173,22);
     transition: 1s ease-in-out;
 
     &:hover {
-        border:2px solid orange;
+        border:2px solid rgb(254,173,22);
         background-color: transparent;
-        color: orange;
+        color: rgb(254,173,22);
     }
 `;
