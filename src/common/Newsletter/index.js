@@ -38,7 +38,7 @@ const Newsletter = () => {
             {popUp &&
                 (<StyledNewsletter>
                     <Container>
-                        <Header>Thank You for your Suscribe</Header>
+                        <Header>Thank You for Subscribing</Header>
                         <Title>{email}</Title>
                     </Container>
                 </StyledNewsletter>
@@ -49,8 +49,18 @@ const Newsletter = () => {
                         <Header>Newsletter</Header>
                         <Title>You can suscribe our Newsletter</Title>
                         <Form onSubmit={onFormSubmit}>
-                            <Input type="email" placeholder="Add your email..." error={error} value={email} onChange={(e) => setEmail(e.target.value)} />
-                            <Button type="submit">Suscribe</Button>
+                            <Input
+                                type="email"
+                                placeholder="Add your email..."
+                                error={error}
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
+                            />
+                            <Button
+                                type="submit"
+                            >
+                                Suscribe
+                            </Button>
                         </Form>
                         <Button
                             onClick={() => {
