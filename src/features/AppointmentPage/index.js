@@ -19,6 +19,7 @@ const AppointmentPage = () => {
     const modalState = {
         state: false,
         content: '',
+        error: false,
     }
 
     const [values, setValues] = useState(initialState);
@@ -33,10 +34,10 @@ const AppointmentPage = () => {
 
     const onFormSubmit = (e) => {
         e.preventDefault();
-        const { name, email, phone, msg } = values;
+        const { name, email, phone } = values;
 
-        if (!name || !email || !phone || !msg) {
-            return setModal({ state: true, content: "Please provide data in all fields." })
+        if (!name || !email || !phone) {
+            return setModal({ state: true, content: "Please provide data in requiered fields.", error: true })
         }
         setModal({ state: true, content: 'Your message has been delivered.' });
         setValues(initialState);
@@ -64,22 +65,56 @@ const AppointmentPage = () => {
                     {modal.state &&
                         <ModalContent>{modal.content}</ModalContent>}
                     <Label>
-                        <Span>Full Name:</Span>
-                        <Input type="text" name="name" value={values.name} onChange={handleOnChange} />
+                        <Span>Full Name:*</Span>
+                        <Input
+                            required
+                            error={modal.error}
+                            type="text"
+                            name="name"
+                            value={values.name}
+                            onChange={handleOnChange}
+                        />
                     </Label>
                     <Label>
-                        <Span>E-mail address:</Span>
-                        <Input type="email" name="email" value={values.email} onChange={handleOnChange} />
+                        <Span>E-mail address:*</Span>
+                        <Input
+                            required
+                            error={modal.error}
+                            type="email"
+                            name="email"
+                            value={values.email}
+                            onChange={handleOnChange}
+                        />
                     </Label>
                     <Label>
-                        <Span>Phone number:</Span>
-                        <Input type="tel" name="phone" value={values.phone} onChange={handleOnChange} />
+                        <Span>Phone number:*</Span>
+                        <Input
+                            required
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"
+                            placeholder="Format: 123-456-789"
+                            error={modal.error}
+                            type="tel"
+                            name="phone"
+                            value={values.phone}
+                            onChange={handleOnChange}
+                        />
                     </Label>
                     <Label>
                         <Span>Message:</Span>
-                        <Textarea name="msg" value={values.msg} onChange={handleOnChange} />
+                        <Textarea
+                            name="msg"
+                            value={values.msg}
+                            onChange={handleOnChange}
+                        />
                     </Label>
-                    <Button type="submit">Send Form</Button>
+                    <Button
+                        type="submit"
+                    >
+                        Send Form
+                    </Button>
+                    <Paragraph>
+                        * requiered fields
+                    </Paragraph>
                 </Fieldset>
             </Form>
         </Section>

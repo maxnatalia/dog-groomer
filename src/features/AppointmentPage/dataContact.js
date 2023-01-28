@@ -7,7 +7,7 @@ export const dataContact = [
     {
         id: 2,
         title: 'Phone',
-        subtitle: '+10 200 500 600 360',
+        subtitle: '500 600 360',
     },
     {
         id: 3,

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const Section = styled.section`
     margin: 0 auto;
@@ -42,6 +42,9 @@ export const Form = styled.form`
 
 export const Span = styled.span`
     display: block;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 2px;
 `;
 
 export const Input = styled.input`
@@ -51,6 +54,10 @@ export const Input = styled.input`
     border-radius: 15px;
     border: 2px solid rgb(254,173,22);
     box-shadow: 1px 1px 2px gray;
+
+    ${({ error }) => error && css`
+        border: 4px solid crimson;
+    `}
 `;
 
 export const Textarea = styled.textarea`
@@ -68,6 +75,7 @@ export const Button = styled.button`
     letter-spacing: 2px;
     background-color: rgb(254,173,22);
     padding: 15px;
+    margin: 20px;
     border-radius: 15px;
     border: 2px solid rgb(254,173,22);
     transition: 1s ease-in-out;
