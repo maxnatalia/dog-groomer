@@ -39,7 +39,7 @@ const Footer = () => {
                         Contact with Us
                     </ContactTitle>
                     <ContactPhone>
-                        <PhoneIcon src={tel} alt="" />+10 200 500 600 360
+                        <PhoneIcon src={tel} alt="" />500 600 360
                     </ContactPhone>
                     <ContactHours>
                         Opening Hours: Mon - Sun: 10am - 6pm
