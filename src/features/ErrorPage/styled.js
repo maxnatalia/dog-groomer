@@ -12,7 +12,7 @@ export const Container = styled.div`
 
 export const Title = styled.h1`
     font-size: 100px;
-    color: orange;
+    color: rgb(254,173,22);
 `;
 
 export const Info = styled.p`
