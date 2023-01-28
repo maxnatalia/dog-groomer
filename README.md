@@ -1,6 +1,24 @@
-# Project in progress...
+# 🐶Dog-Groomer
+
+Website created for practise more React, Styled Components and other technologies.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## 📌Demo:
+
+Feel free to see it!👁‍🗨
+
+[Dog-Groomer](https://maxnatalia.github.io/dog-groomer/)
+
+## 🛠️Used technologies:
+
+- [x] HTML
+- [x] CSS (Flex, Grid)
+- [x] JavaScript ES6+
+- [x] MediaQueries
+- [x] React
+- [x] React hooks
+- [x] Styled-components
 
 ## Available Scripts
 
