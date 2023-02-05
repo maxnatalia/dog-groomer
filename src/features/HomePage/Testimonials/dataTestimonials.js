@@ -1,46 +1,34 @@
 const testimonials = [
     {
         id: 1,
-        name: 'Becca Rodriguez',
-        info:
-            'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas voluptates repudiandae sint et molestiae non recusandae.',
+        name: "Becca Rodriguez",
+        info: "Incredibly professional approach to our dog! The groomer was very cautious and attentive, and our dog returned home looking like new!",
     },
 
     {
         id: 2,
-        name: 'Julia Roberts',
-        info:
-            'Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.',
+        name: "Julia Roberts",
+        info: "We didn't know that a visit to the groomer could be so enjoyable for our dog! It's clear that the groomer loves animals and is really good at it.",
     },
     {
         id: 3,
-        name: 'Carlos Santi',
-        info:
-            'Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat',
+        name: "Carlos Santi",
+        info: "Our dog felt like at home during the visit to the groomer! We are very satisfied with the quality of services and the groomer's commitment.",
     },
     {
         id: 4,
-        name: 'Sarah Jonhson',
-        info:
-            'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. ',
+        name: "Sarah Jonhson",
+        info: "The visit to the groomer was a real pleasure for our dog! The groomer was so gentle and caring that our dog didn't want to leave!",
     },
     {
         id: 5,
-        name: 'Shanone Luz',
-        info:
-            ' Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.',
+        name: "Shanone Luz",
+        info: "We are very satisfied with the quality of services at the dog groomer! The groomer listened carefully to our requirements and achieved the perfect result for our dog.",
     },
     {
         id: 6,
-        name: 'Jon Jonhson',
-        info:
-            'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. ',
-    },
-    {
-        id: 7,
-        name: 'Carlos Santi',
-        info:
-            'Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat',
+        name: "Jon Jonhson",
+        info: "Our experience with the dog groomer was amazing! The groomer was so attentive and precise, and our dog looked like a million dollars after the visit. We are very satisfied and will definitely return!",
     },
 ]
 export default testimonials;
