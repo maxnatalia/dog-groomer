@@ -9,6 +9,7 @@ export const List = styled.ul`
 export const Wrapper = styled.div`
     display: flex;
     align-items: center;
+    justify-content: center;
 
     @media (max-width: 767px) {
         flex-direction: column-reverse;
@@ -20,10 +21,9 @@ export const Image = styled.img`
 `;
 
 export const Container = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 10px;
 `;
 
 export const Item = styled.li`
