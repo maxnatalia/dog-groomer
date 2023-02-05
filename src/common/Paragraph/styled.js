@@ -11,4 +11,8 @@ export const Paragraph = styled.p`
         font-size: 32px;
         font-weight: 600;
     `}
+
+    ${({ special }) => special && css`
+        font-weight: 900;
+    `}
 `;
