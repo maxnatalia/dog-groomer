@@ -6,22 +6,16 @@ export const carouselData = [
   {
     id: 1,
     title: 'We take care of your pet.',
-    subtitle:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et, lectus sit.',
     img: dog1,
   },
   {
     id: 2,
     title: 'The Groom Philosophy',
-    subtitle:
-      'Lorem ipsum consectetur adipiscing elit. Nunc odio.',
     img: dog2,
   },
   {
     id: 3,
-    title: 'Why choose us?',
-    subtitle:
-      'Lorem ipsum dolor sit amet, consectetur. Nunc odio in et, lectus sit.',
+    title: 'Top Staff',
     img: dog3,
   },
 ];
