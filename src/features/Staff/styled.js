@@ -9,13 +9,22 @@ export const Section = styled.section`
 
 export const Wrapper = styled.div`
     display: flex;
+    flex-direction: column;
     gap: 20px;
     align-items: center;
 
     @media (max-width: 767px) {
-        flex-direction: column;
         padding: 20px;
     }
+
+    ${({ header }) => header && css`
+        flex-direction: row-reverse;
+        justify-content: center;
+
+        @media (max-width: 767px) {
+            flex-direction: column;
+        }
+    `}
 `;
 
 export const ImageDog = styled.img`

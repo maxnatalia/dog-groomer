@@ -46,13 +46,20 @@ const Staff = () => {
 
     return (
         <Section>
-            <Header>Our Staff</Header>
-            <Wrapper>
+            <Wrapper header>
+                <Header>Our Staff</Header>
                 <ImageDog src={dog} alt="dog" />
-                <Paragraph>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in sodales urna.
-                    Cras pharetra orci non risus auctor suscipit ut sit amet nulla. Nulla tempor finibus nulla sit amet bibendum.
-                    Suspendisse porttitor gravida porta. Mauris ac urna consectetur, gravida risus ut, bibendum nulla.
-                    Fusce suscipit orci nec lacus consequat, eu rhoncus nulla placerat.</Paragraph>
+            </Wrapper>
+            <Wrapper>
+                <Paragraph>
+                    The staff at our dog grooming salon are a group of highly qualified and experienced professionals. Each of our groomers holds certificates and diplomas from reputable animal grooming schools. They are all passionate about their work and love animals, which is extremely important to us.
+                </Paragraph>
+                <Paragraph>
+                    Our staff has years of experience in caring for and styling different dog breeds, allowing us to provide our clients with the best services and results. Our groomers are able to adapt to the individual needs and requirements of each dog to ensure the best experience during their visit with us.
+                </Paragraph>
+                <Paragraph>
+                    Additionally, our staff receives regular training and learns new techniques and tools to provide our clients with the best and latest services. We are proud of our staff and their commitment to providing the best care for our four-legged clients.
+                </Paragraph>
             </Wrapper>
             <SectionCenter>
                 {data.map((person, personIndex) => {
