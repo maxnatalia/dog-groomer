@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react"
 import { carouselData } from "./carouselData";
 import { Header } from "../../../common/Header/styled";
-import { Paragraph } from "../../../common/Paragraph/styled";
 import {
     SectionHero,
     Container,
@@ -39,7 +38,6 @@ const Carousel = () => {
                         key={id}>
                         <ContentWrapper>
                             <Header>{el.title}</Header>
-                            <Paragraph hero>{el.subtitle}</Paragraph>
                         </ContentWrapper>
                         <ImageContainer>
                             <Img src={el.img} alt="" />
