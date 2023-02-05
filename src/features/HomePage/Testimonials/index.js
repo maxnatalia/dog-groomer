@@ -13,7 +13,7 @@ const Testimonials = () => {
                 {dataTestimonials.map((item) => {
                     return (<Tile key={item.id}>
                         <h3>{item.name}</h3>
-                        <p>{item.info}</p>
+                        <blockquote>{item.info}</blockquote>
                         <span>🐶🐶🐶🐶🐶</span>
                     </Tile>)
                 })}
