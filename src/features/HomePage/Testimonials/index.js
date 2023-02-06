@@ -1,7 +1,7 @@
 import { Header } from "../../../common/Header/styled";
 import { Tile } from "../../../common/Tile/styled";
 import { Title } from "../../../common/Title/styled";
-import { Container, Section } from "./styled";
+import { Container, IconQuote, Section } from "./styled";
 import dataTestimonials from "./dataTestimonials";
 
 const Testimonials = () => {
@@ -12,9 +12,10 @@ const Testimonials = () => {
             <Container>
                 {dataTestimonials.map((item) => {
                     return (<Tile key={item.id}>
+                        <span>🐶🐶🐶🐶🐶</span>
                         <h3>{item.name}</h3>
                         <blockquote>{item.info}</blockquote>
-                        <span>🐶🐶🐶🐶🐶</span>
+                        <IconQuote />
                     </Tile>)
                 })}
             </Container>
