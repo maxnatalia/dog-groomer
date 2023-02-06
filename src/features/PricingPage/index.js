@@ -1,10 +1,9 @@
 import { useState, useEffect } from "react";
 import { dataServicePrice } from "./dataServicePrice";
-import { Section, Wrapper, Category, PriceContainer, CategoryName, CategoryWeight } from "./styled";
+import { Section, Wrapper, Category, PriceContainer, Image, CategoryName, CategoryWeight } from "./styled";
 import { Header } from "../../common/Header/styled";
 import { Title } from "../../common/Title/styled";
 import Service from "./Service";
-
 
 const PricingPage = () => {
     const [services, setServices] = useState([]);
@@ -36,7 +35,7 @@ const PricingPage = () => {
                                 getService(name);
                                 setActive(index)
                             }}>
-                            <img src={image} alt={name} />
+                            <Image src={image} alt={name} />
                             <CategoryName
                                 activeDog={active === index}
                             >
@@ -53,7 +52,6 @@ const PricingPage = () => {
             <PriceContainer>
                 <Service services={services} />
             </PriceContainer>
-
         </Section>
     )
 };
