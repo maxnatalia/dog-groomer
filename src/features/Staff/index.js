@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { FiChevronRight, FiChevronLeft } from 'react-icons/fi';
 import data from './data';
-import { Section, ImageDog, Wrapper, SectionCenter, Button, Image, IconQuote, Article } from './styled';
+import { Section, ImageDog, Wrapper, SectionCenter, Button, Image, Article } from './styled';
 import { Header } from "../../common/Header/styled";
 import { Paragraph } from "../../common/Paragraph/styled";
 import dog from "./dog3.jpg";
@@ -72,7 +72,6 @@ const Staff = () => {
                             <h3>{name}</h3>
                             <h3>{title}</h3>
                             <p>{quote}</p>
-                            <IconQuote />
                         </Article>
                     )
                 })}
@@ -80,7 +79,6 @@ const Staff = () => {
                 <Button right onClick={nextSlide}><FiChevronRight /></Button>
             </SectionCenter>
         </Section>
-
     )
 };
 

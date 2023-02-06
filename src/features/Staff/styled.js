@@ -1,10 +1,8 @@
 import styled, { css } from "styled-components";
-import { FaQuoteRight } from 'react-icons/fa';
 
 export const Section = styled.section`
-    width: 90vw;
-    margin: 10rem auto 5rem auto;
-    max-width: 1170px;
+    margin: 0 auto;
+    padding: 40px;
 `;
 
 export const Wrapper = styled.div`
@@ -20,6 +18,7 @@ export const Wrapper = styled.div`
     ${({ header }) => header && css`
         flex-direction: row-reverse;
         justify-content: center;
+        margin-top: 60px;
 
         @media (max-width: 767px) {
             flex-direction: column;
@@ -84,13 +83,6 @@ export const Image = styled.img`
     object-fit: cover;
     border: 4px solid rgb(254,173,22);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-`;
-
-export const IconQuote = styled(FaQuoteRight)`
-    font-size: 3rem;
-    margin-top: 1rem;
-    color: rgb(254,173,22);
-    z-index: -50;
 `;
 
 export const Article = styled.article`
