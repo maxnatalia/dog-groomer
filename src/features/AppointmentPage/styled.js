@@ -2,7 +2,6 @@ import styled, { css } from "styled-components";
 
 export const Section = styled.section`
     margin: 0 auto;
-    margin-top: 80px;
     max-width: 900px;
 `;
 
@@ -11,7 +10,7 @@ export const Container = styled.div`
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 20px;
-    margin-top: 20px;
+    /* margin-top: 20px; */
 `;
 
 export const Image = styled.img`
