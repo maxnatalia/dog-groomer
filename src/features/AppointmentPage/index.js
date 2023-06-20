@@ -6,6 +6,7 @@ import { Container, Section, Fieldset, Form, Span, Input, Textarea, Button, Imag
 import { dataContact } from "./dataContact";
 import dogApp from "./dog-appointment.png";
 import { useState } from "react";
+import Map from "./Map/index";
 
 const AppointmentPage = () => {
 
@@ -117,6 +118,7 @@ const AppointmentPage = () => {
                     </Paragraph>
                 </Fieldset>
             </Form>
+            <Map />
         </Section>
     )
 };
