@@ -1,26 +1,22 @@
-import { Popup } from "react-leaflet";
-import {
-    StyledMapContainer,
-    StyledTileLayer,
-    StyledMarker,
-} from "./styled";
+import { Marker, Popup, TileLayer } from "react-leaflet";
+import { StyledMapContainer } from "./styled";
 
-function Map() {
+const Map = () => {
     return (
         <div>
-            <StyledMapContainer center={[51.505, -0.09]} zoom={13} scrollWheelZoom={false}>
-                <StyledTileLayer
+            <StyledMapContainer center={[51.505, -0.09]} zoom={13} scrollWheelZoom={true}>
+                <TileLayer
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 />
-                <StyledMarker position={[51.505, -0.09]}>
+                <Marker position={[51.505, -0.09]}>
                     <Popup>
                         A pretty CSS3 popup. <br /> Easily customizable.
                     </Popup>
-                </StyledMarker>
+                </Marker>
             </StyledMapContainer>
         </div>
     )
-}
+};
 
 export default Map;
