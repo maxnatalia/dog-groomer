@@ -11,26 +11,7 @@ export const StyledNavigation = styled.nav`
     position: sticky;
     top: 0;
     left:0;
-    z-index: 10;
-`;
-
-export const Wrapper = styled.div`
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-`;
-
-export const Logo = styled.img`
-    margin: 10px;
-    width: 60px;
-    height: 60px;
-`;
-
-export const Company = styled.span`
-    font-size: 28px;
-    font-weight: 600;
-    letter-spacing: 1.4px;
-    padding: 10px;
+    z-index: 100;
 `;
 
 export const List = styled.ul`
