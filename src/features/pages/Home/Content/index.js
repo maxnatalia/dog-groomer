@@ -4,7 +4,6 @@ import dog1 from "./dog1.jpg";
 import dog2 from "./dog2.jpg";
 import dog3 from "./dog3.jpg";
 
-
 const Content = () => {
     return (
         <StyledContent>
@@ -14,17 +13,17 @@ const Content = () => {
                     <Image
                         photoOne
                         src={dog1}
-                        alt="plant photo1"
+                        alt="dog1"
                     />
                     <Image
                         photoThree
                         src={dog3}
-                        alt="plant photo3"
+                        alt="dog3"
                     />
                     <Image
                         photoTwo
                         src={dog2}
-                        alt="plant photo2"
+                        alt="dog2"
                     />
                 </ImageWrapper>
                 <Wrapper>
