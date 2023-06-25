@@ -1,10 +1,9 @@
-
 import { HorizontalLine, Icon, StyledTitle, Wrapper } from "./styled";
 
-const Title = ({ text }) => {
+const Title = ({ text, subtitle }) => {
     return (
         <>
-            <StyledTitle>
+            <StyledTitle subtitle={subtitle}>
                 {text}
             </StyledTitle>
             <Wrapper>
