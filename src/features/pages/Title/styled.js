@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { MdOutlinePets } from "react-icons/md";
 
 export const StyledTitle = styled.h2`
@@ -6,6 +6,10 @@ export const StyledTitle = styled.h2`
     font-size: 36px;
     letter-spacing: 2px;
     text-align: center;
+
+    ${({ subtitle }) => subtitle && css`
+        font-size: 28px;
+    `}
 `;
 
 export const Wrapper = styled.div`
@@ -23,8 +27,8 @@ export const Icon = styled(MdOutlinePets)`
 `;
 
 export const HorizontalLine = styled.hr`
-  border: none;
-  width: 75%;
-  height: 1px;
-  background-color: ${({ theme }) => theme.colors.primary};
+    border: none;
+    width: 75%;
+    height: 1px;
+    background-color: ${({ theme }) => theme.colors.primary};
 `;
