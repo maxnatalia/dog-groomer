@@ -49,7 +49,7 @@ export const Container = styled.div`
 
 export const ImageWrapper = styled.div`
     width: 50%;
-    padding: 40px;
+    padding: 20px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, 1fr);
