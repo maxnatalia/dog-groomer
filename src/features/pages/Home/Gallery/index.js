@@ -1,16 +1,18 @@
-import { BoxGallery, Image, Item, StyledGallery, Title } from "./styled";
-import dog1 from "./dog1.png";
-import dog2 from "./dog2.png";
-import dog3 from "./dog3.png";
-import dog4 from "./dog4.png";
-import dog5 from "./dog5.png";
+import Title from "../../Title";
+import { BoxGallery, Image, Item, StyledGallery } from "./styled";
+import dog1 from "./dog1.jpg";
+import dog2 from "./dog2.jpg";
+import dog3 from "./dog3.jpg";
+import dog4 from "./dog4.jpg";
+import dog5 from "./dog5.jpg";
 import dog6 from "./dog6.png";
 import dog7 from "./dog7.png";
+
 
 const Gallery = () => {
     return (
         <StyledGallery>
-            <Title>See How We Work - Gallery</Title>
+            <Title text={"See How We Work - Gallery"} extraContent />
             <BoxGallery>
                 <Item one>
                     <Image src={dog1} alt="dog1" />
