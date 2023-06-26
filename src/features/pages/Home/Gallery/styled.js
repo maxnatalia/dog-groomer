@@ -1,8 +1,8 @@
 import styled, { css } from "styled-components";
 
 export const StyledGallery = styled.article`
-    padding: 20px;
     min-height: 80vh;
+    padding: 5px 0;
 `;
 
 export const BoxGallery = styled.div`
@@ -10,10 +10,6 @@ export const BoxGallery = styled.div`
     grid-gap: 5px;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(6, 1fr);
-`;
-
-export const Title = styled.h2`
-
 `;
 
 export const Item = styled.div`
@@ -25,7 +21,7 @@ export const Item = styled.div`
 
     ${({ two }) => two && css`
         grid-row: 1 / span 2;
-        grid-column: 5 / span 4;
+        grid-column: 5 / span 2;
     `}
 
      ${({ three }) => three && css`
@@ -45,7 +41,7 @@ export const Item = styled.div`
 
     ${({ six }) => six && css`
         grid-row: 6 / span 1;
-        grid-column: 6 / span 1;
+        grid-column: 6 / -1;
     `}
 
     ${({ seven }) => seven && css`
