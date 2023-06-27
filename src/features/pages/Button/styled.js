@@ -3,8 +3,7 @@ import styled from "styled-components";
 export const StyledButton = styled.button`
     display: flex;
     align-items: center;
-    justify-content: ${({ icon }) => (icon ? "space-between" : "center")};
-    width: 220px;
+    justify-content: center;
     font-size: 26px;
     padding: 10px 20px;
     border-radius: 5px;
@@ -23,13 +22,13 @@ export const StyledButton = styled.button`
     }
 
     @media (max-width: 767px) {
-        width: 160px;
         font-size: 16px;
     }
 `;
 
 export const Icon = styled.span`
     display: flex;
+    padding: 5px;
 `;
 
 export const Text = styled.span`
