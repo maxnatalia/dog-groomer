@@ -1,5 +1,5 @@
-import Title from "../../Title";
-import { BoxGallery, Image, Item, StyledGallery } from "./styled";
+import Section from "../../../../common/Section";
+import Title from "../../../../common/Title";
 import dog1 from "./dog1.jpg";
 import dog2 from "./dog2.jpg";
 import dog3 from "./dog3.jpg";
@@ -7,11 +7,11 @@ import dog4 from "./dog4.jpg";
 import dog5 from "./dog5.jpg";
 import dog6 from "./dog6.png";
 import dog7 from "./dog7.png";
-
+import { BoxGallery, Image, Item } from "./styled";
 
 const Gallery = () => {
     return (
-        <StyledGallery>
+        <Section id={"gallery"}>
             <Title text={"See How We Work - Gallery"} extraContent />
             <BoxGallery>
                 <Item one>
@@ -36,7 +36,7 @@ const Gallery = () => {
                     <Image src={dog7} alt="dog7" />
                 </Item>
             </BoxGallery>
-        </StyledGallery>
+        </Section>
     )
 };
 

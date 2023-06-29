@@ -1,11 +1,7 @@
 import styled, { css } from "styled-components";
 
-export const StyledGallery = styled.article`
-    min-height: 80vh;
-    padding: 5px 0;
-`;
-
 export const BoxGallery = styled.div`
+    margin-top: 40px;
     display: grid;
     grid-gap: 5px;
     grid-template-columns: repeat(6, 1fr);
