@@ -1,73 +1,117 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { FaQuoteRight } from 'react-icons/fa';
-import { Link } from "react-router-dom";
+import { FaArrowCircleDown } from "react-icons/fa";
+import { FaArrowCircleUp } from "react-icons/fa";
 
-export const Testimonials = styled.article`
-    padding: 20px;
-    min-height: 80vh;
-    background-color: ${({ theme }) => theme.colors.medium};
+export const Box = styled.div`
+    margin-top: 20px;
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+    @media (max-width: 767px) {
+        justify-content: end;
+        align-items: center;
+    }
 `;
 
-export const Title = styled.h2`
-    font-size: 36px;
-    text-align: center;
-    color:  ${({ theme }) => theme.colors.light};
+export const ButtonsBox = styled.div`
+    margin-right: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 5;
+    font-size: 40px;
+    color: ${({ theme }) => theme.colors.primary};
+
+    @media (max-width: 767px) {
+        margin-right: 5px;
+        font-size: 30px;
+    }
 `;
 
-export const BoxReviews = styled.div`
-   display: flex;
-   flex-wrap: wrap;
-   gap: 20px;
-   justify-content: center;
+export const Prev = styled(FaArrowCircleDown)`
+    cursor: pointer;
+    transition: all 1s ease-in-out;
 
+    &:hover {
+        transform: rotate(90deg);
+    }
+`;
+
+export const Next = styled(FaArrowCircleUp)`
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+
+    &:hover {
+        transform: rotate(90deg);
+    }
 `;
 
 export const Review = styled.div`
-    display:flex;
-    flex-direction: column;
-    width: 350px;
-    height: 420px;
+    max-width: 50%;
+    max-height: 100%;
+    transition: all 0.3s linear;
+    background-color: ${({ theme }) => theme.colors.secondary};
+    color: ${({ theme }) => theme.colors.dark};
     padding: 10px;
     border-radius: 5px;
-    border: 1px solid ${({ theme }) => theme.colors.dark};
-    background-color: ${({ theme }) => theme.colors.light};
     box-shadow: ${({ theme }) => theme.shadows.light};
+    opacity: 0;
+    position: absolute;
+    top: 150px;
+    left: 100px;
+    transform: translateX(0);
+    transition: all 1s ease-in-out;
+
+    @media (max-width: 767px) {
+        max-width: 80%;
+        left: 10px;
+    }
+
+    ${({ activeSlide }) => activeSlide && css`
+        opacity: 1;
+        color: ${({ theme }) => theme.colors.primary};
+        border: 2px solid ${({ theme }) => theme.colors.primary};
+        z-index: 5;
+    `}
+
+    ${({ prevSlide }) => prevSlide && css`
+        opacity: 0.5;
+        top: 0;
+        left: 40px;
+    `}
+
+    ${({ nextSlide }) => nextSlide && css`
+        opacity: 0.5;
+        top: 250px;
+        left: 40px;
+    `}
 `;
 
-export const Name = styled.h3`
-    letter-spacing: 2px;
-    font-size: 20px;
-    align-self: center;
-`;
-
-export const Opinion = styled.blockquote`
-    letter-spacing: 1.5px;
-    line-height: 1.8;
-    flex:1;
+export const Blockquote = styled.blockquote`
+    margin: 0;
 `;
 
 export const IconQuote = styled(FaQuoteRight)`
     font-size: 30px;
     color: ${({ theme }) => theme.colors.primary};
+    margin-top: 10px;
+
+    @media (max-width: 767px) {
+        font-size: 20px;
+    }
 `;
 
-export const ButtonLink = styled(Link)`
-    display: inline-block;
-    padding: 10px 16px;
-    margin: 40px;
-    text-decoration: none;
-    font-size: 24px;
-    font-weight: 600;
-    letter-spacing: 1.5px;
-    border-radius: 5px;
-    background-color:${({ theme }) => theme.colors.primary};
-    color: ${({ theme }) => theme.colors.third};
-    box-shadow: ${({ theme }) => theme.shadows.light};
-    cursor: pointer;
-    transition: all .5s ease-in-out;
+export const BoxLinks = styled.div`
+    display: flex;
+    justify-content: center;
 
-    &:hover {
-        background-color: ${({ theme }) => theme.colors.third};
-        color: ${({ theme }) => theme.colors.primary};
+    @media (max-width: 767px) {
+        flex-direction: column;
+        justify-content: space-around;
     }
 `;

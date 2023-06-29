@@ -23,11 +23,11 @@ export const dataReviews = [
     {
         id: 5,
         name: "Shanone Luz",
-        info: "We are very satisfied with the quality of services at the dog groomer! The groomer listened carefully to our requirements and achieved the perfect result for our dog.",
+        info: "We are very satisfied with the quality of services at the dog groomer! The groomer listened carefully to our requirements and achieved the perfect result.",
     },
     {
         id: 6,
         name: "Jon Jonhson",
-        info: "Our experience with the dog groomer was amazing! The groomer was so attentive and precise, and our dog looked like a million dollars after the visit. We are very satisfied and will definitely return!",
+        info: "Our experience with the dog groomer was amazing! The groomer was so attentive and precise, and our dog looked like a million dollars after the visit!",
     },
 ]
