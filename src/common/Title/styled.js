@@ -1,15 +1,55 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
+import { MdOutlinePets } from "react-icons/md";
+import { motion } from "framer-motion";
 
-export const Title = styled.h3`
-    font-size: 32px;
+export const StyledTitle = styled(motion.h2)`
     margin: 0;
-    margin-top: 30px;
-    letter-spacing: 1.7px;
+    margin-top: 80px;
+    font-size: 36px;
     text-align: center;
-    color: gray;
-    text-shadow: 4px 4px 6px rgb(254,173,22);
 
     @media (max-width: 767px) {
-        font-size: 22px;
+        font-size: 24px;
+        margin-top: 40px;
     }
+
+    ${({ mainTitle }) => mainTitle && css`
+        margin: 0;
+        padding: 40px;
+        border-top: 2px solid ${({ theme }) => theme.colors.primary};
+        background-color: ${({ theme }) => theme.colors.dark};
+        color: ${({ theme }) => theme.colors.secondary};
+        font-size: 40px;
+
+        @media (max-width: 767px) {
+            font-size: 26px;
+            padding: 20px;
+            margin: 0;
+        }
+    `}
+`;
+
+export const Wrapper = styled.div`
+    padding: 20px;
+    position: relative;
+`;
+
+export const Icon = styled(MdOutlinePets)`
+    font-size: 40px;
+    color: ${({ theme }) => theme.colors.primary};
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+
+    @media (max-width: 767px) {
+        font-size: 30px;
+    }
+`;
+
+export const HorizontalLine = styled.hr`
+    border: none;
+    width: 75%;
+    height: 1px;
+    background-color: ${({ theme }) => theme.colors.primary};
 `;
