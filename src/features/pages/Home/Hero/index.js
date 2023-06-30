@@ -1,21 +1,25 @@
-import Button from "../../Button";
-import { ButtonsBox, Header, Title } from "./styled";
-import { MdOutlinePets } from "react-icons/md";
-import { MdOutlineReviews } from "react-icons/md";
-import { TfiGallery } from "react-icons/tfi";
-import { MdContactPhone } from "react-icons/md";
+import {
+    MdContactPhone,
+    MdPhotoLibrary,
+    MdOutlineAddTask,
+    MdCleaningServices,
+    MdOutlineReviews,
+} from "react-icons/md";
+import Button from "../../../../common/Button";
+import Title from "../../../../common/Title";
+import { ButtonsBox, Header } from "./styled";
 
 const Hero = () => {
     return (
         <Header>
             <ButtonsBox>
-                <Button icon={<MdOutlineReviews />} text={"reviews"} />
-                <Button icon={<TfiGallery />} text={"gallery"} />
-                <Button icon={<MdContactPhone />} text={"contact"} />
+                <Button as="a" href="#services" icon={<MdCleaningServices />} text={"services"} />
+                <Button as="a" href="#reviews" icon={<MdOutlineReviews />} text={"reviews"} />
+                <Button as="a" href="#gallery" icon={<MdPhotoLibrary />} text={"gallery"} />
+                <Button as="a" href="#contact" icon={<MdContactPhone />} text={"contact"} />
+                <Button as="a" href="#newsletter" icon={<MdOutlineAddTask />} text={"newsletter"} />
             </ButtonsBox>
-            <Title>Your Pet's Well-being is Our Priority
-                <MdOutlinePets />
-            </Title>
+            <Title as={"h1"} text={"Your Pet's Well-being is Our Priority"} mainTitle />
         </Header>
     )
 };
