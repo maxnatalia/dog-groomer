@@ -1,21 +1,37 @@
-import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-export const Button = styled(Link)`
-    text-decoration: inherit;
-    background-color: #dc952a;
-    color: white;
-    font-weight: 700;
-    border-radius: 20px;
-    border: none;
+export const StyledButton = styled.button`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    text-decoration: none;
     padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid ${({ theme }) => theme.colors.third};
+    background-color: ${({ theme }) => theme.colors.dark};
+    color: ${({ theme }) => theme.colors.third};
+    box-shadow: ${({ theme }) => theme.shadows.light};
     cursor: pointer;
-    box-shadow: 1px 2px 2px gray;
-    transition: 1s ease-in-out;
+    transition: all .5s ease-in-out;
 
     &:hover {
-        filter: brightness(120%);
-        box-shadow: 1px 5px 3px gray;
-        color: #000958;
+        background-color: ${({ theme }) => theme.colors.third};
+        color: ${({ theme }) => theme.colors.dark};
+        font-weight: 600;
     }
+
+    @media (max-width: 767px) {
+        font-size: 18px;
+    }
+`;
+
+export const Icon = styled.span`
+    display: flex;
+    padding: 5px;
+`;
+
+export const Text = styled.span`
+    display: flex;
+    text-transform: capitalize;
 `;
