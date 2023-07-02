@@ -6,6 +6,7 @@ export const StyledInfoBar = styled.div`
     background-color: ${({ theme }) => theme.colors.secondary};
     border-bottom: 2px solid ${({ theme }) => theme.colors.primary};
     border-top: 2px solid ${({ theme }) => theme.colors.primary};
+    overflow: hidden;
 `;
 
 export const AnimateSpan = styled(motion.span)`
