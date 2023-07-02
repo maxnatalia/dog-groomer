@@ -2,7 +2,7 @@ import { useRef } from "react";
 import { HorizontalLine, Icon, StyledTitle, Wrapper } from "./styled";
 import { useInView } from "framer-motion";
 
-const Title = ({ as = "h2", mainTitle, text, extraContent = null }) => {
+const Title = ({ text, extraContent = null }) => {
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true });
 
@@ -16,8 +16,6 @@ const Title = ({ as = "h2", mainTitle, text, extraContent = null }) => {
         <div ref={ref}>
             <StyledTitle
                 style={animationStyle}
-                as={as}
-                mainTitle={mainTitle}
             >
                 {text}
             </StyledTitle>

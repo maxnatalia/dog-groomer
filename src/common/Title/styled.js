@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { MdOutlinePets } from "react-icons/md";
 import { motion } from "framer-motion";
 
@@ -12,21 +12,6 @@ export const StyledTitle = styled(motion.h2)`
         font-size: 24px;
         margin-top: 40px;
     }
-
-    ${({ mainTitle }) => mainTitle && css`
-        margin: 0;
-        padding: 40px;
-        border-top: 2px solid ${({ theme }) => theme.colors.primary};
-        background-color: ${({ theme }) => theme.colors.dark};
-        color: ${({ theme }) => theme.colors.secondary};
-        font-size: 40px;
-
-        @media (max-width: 767px) {
-            font-size: 26px;
-            padding: 20px;
-            margin: 0;
-        }
-    `}
 `;
 
 export const Wrapper = styled.div`
