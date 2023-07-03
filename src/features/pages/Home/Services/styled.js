@@ -1,25 +1,4 @@
 import styled, { css } from "styled-components";
-import { MdPets } from "react-icons/md";
-
-// export const Section = styled.section`
-//     min-height: 80vh;
-//     background-color: ${({ theme }) => theme.colors.light};
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-// `;
-
-export const IconPet = styled(MdPets)`
-    font-size: 40px;
-
-    ${({ reverse }) => reverse && css`
-        transform: rotate(180deg);
-    `}
-
-    @media (max-width: 767px) {
-        font-size: 30px;
-    }
-`;
 
 export const Wrapper = styled.div`
     max-width: 600px;
