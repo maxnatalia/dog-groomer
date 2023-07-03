@@ -29,6 +29,7 @@ export const InfoTitle = styled.h3`
     margin: 0;
     font-size: 20px;
     text-transform: capitalize;
+    text-align: center;
 
     @media (max-width: 767px) {
         font-size: 16px;
