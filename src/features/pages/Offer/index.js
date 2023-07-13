@@ -1,16 +1,13 @@
-import AppLayout from "../../../common/AppLayout";
+import Hero from "../../../common/Hero";
 import { buttonsOffer } from "./buttonsOffer";
 import backgroundOffer from "./backgroundOffer.jpg";
 
 const Offer = () => {
     return (
-        <AppLayout
-            buttonsData={buttonsOffer}
-            text={"More than just grooming"}
-            backgroundImage={backgroundOffer}
-        >
+        <>
+            <Hero buttonsData={buttonsOffer} text={"..."} backgroundImage={backgroundOffer} />
             <h2>More details will follow...</h2>
-        </AppLayout>
+        </>
     )
 };
 

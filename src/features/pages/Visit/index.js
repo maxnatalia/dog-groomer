@@ -1,16 +1,13 @@
-import AppLayout from "../../../common/AppLayout";
-import backgroundVisit from "./backgroundVisit.jpg";
+import Hero from "../../../common/Hero";
 import { buttonsVisit } from "./buttonsVisit";
+import backgroundVisit from "./backgroundVisit.jpg";
 
 const Visit = () => {
     return (
-        <AppLayout
-            backgroundImage={backgroundVisit}
-            text={"Exceptional care for exceptional dogs"}
-            buttonsData={buttonsVisit}
-        >
+        <>
+            <Hero text={"..."} buttonsData={buttonsVisit} backgroundImage={backgroundVisit} />
             <h2>More details will follow...</h2>
-        </AppLayout>
+        </>
     )
 };
 
