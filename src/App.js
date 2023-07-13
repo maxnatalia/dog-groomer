@@ -1,32 +1,27 @@
-import { Routes, Route, HashRouter } from "react-router-dom";
-import HomePage from "./features/HomePage";
-import PricingPage from "./features/PricingPage";
-import AppointmentPage from "./features/AppointmentPage";
-import Navigation from "./common/Navigation";
-import Questions from "./features/Questions";
-import Staff from "./features/Staff";
-import Footer from "./common/Footer";
-import ErrorPage from "./features/ErrorPage";
-import ScrollToTop from "./common/ScrollToTop";
-import Newsletter from "./common/Newsletter";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
+import Home from "./features/pages/Home";
+import About from "./features/pages/About";
+import Offer from "./features/pages/Offer";
+import Error from "./features/pages/Error";
+import Visit from "./features/pages/Visit";
+import Layout from "./features/pages/Layout";
 
-function App() {
+const App = () => {
   return (
-    <HashRouter>
-      <Navigation />
-      <Newsletter />
-      <ScrollToTop>
+    <AnimatePresence>
+      <BrowserRouter basename="dog-groomer">
         <Routes>
-          <Route path="/appointment" element={<AppointmentPage />} />
-          <Route path="/price" element={<PricingPage />} />
-          <Route path="/questions" element={<Questions />} />
-          <Route path="/staff" element={<Staff />} />
-          <Route path="/" element={<HomePage />} />
-          <Route path="*" element={<ErrorPage />} />
+          <Route element={<Layout />}>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/offer" element={<Offer />} />
+            <Route path="/visit" element={<Visit />} />
+          </Route>
+          <Route path="*" element={<Error />} />
         </Routes>
-      </ScrollToTop>
-      <Footer />
-    </HashRouter>
+      </BrowserRouter>
+    </AnimatePresence>
   );
 };
 
