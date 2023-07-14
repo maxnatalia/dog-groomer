@@ -26,8 +26,8 @@ const Layout = () => {
             <Navigation />
             <main>
                 <Outlet />
+                <Newsletter />
             </main>
-            <Newsletter />
             <Footer />
             <Progress />
         </StyledAppLayout>
