@@ -18,7 +18,6 @@ export const StyledButton = styled.button`
     &:hover {
         background-color: ${({ theme }) => theme.colors.third};
         color: ${({ theme }) => theme.colors.dark};
-        font-weight: 600;
     }
 
     @media (max-width: 767px) {
