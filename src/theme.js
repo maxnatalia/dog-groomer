@@ -1,14 +1,17 @@
 export const theme = {
     colors: {
-        primary: "#e15024",
-        secondary: "#f3bf19",
-        third: "#f0dcbb",
-        light: "#fff9f2",
-        medium: "#574d44",
-        dark: "#5e1c20",
+        primary: "#e84f77",
+        secondary: "#fee8f5",
+        third: "#E8E9EB",
+        light: "#ffffff",
+        medium: "#C8CBD0",
+        dark: "#4B5058",
+        veryDark: "#26282C",
+        opacityColorDark: "rgba(232, 79, 119, 0.3)",
+        opacityColorLight: "rgba(254, 232, 245, 0.5)",
     },
     shadows: {
-        light: `6px 6px 13px -5px #5e1c20`,
+        light: `6px 6px 13px -5px #4B5058`,
+        dark: `6px 6px 13px -5px #26282C`,
     },
-
-}
+};
