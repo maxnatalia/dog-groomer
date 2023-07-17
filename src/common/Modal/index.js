@@ -3,6 +3,7 @@ import { createPortal } from "react-dom";
 import { HiXMark } from "react-icons/hi2";
 import Button from "../Button";
 import { Overlay, StyledModal } from "./styled";
+import useOutsideClick from "./useOutsideClick";
 
 const ModalContext = createContext();
 
@@ -12,7 +13,11 @@ const Modal = ({ children }) => {
     const close = () => setOpenName('');
     const open = (name) => setOpenName(name);
 
-    return (<ModalContext.Provider value={{ openName, close, open }}>{children}</ModalContext.Provider>)
+    return (
+        <ModalContext.Provider value={{ openName, close, open }}>
+            {children}
+        </ModalContext.Provider>
+    )
 };
 
 const Open = ({ children, opens: opensWindowName }) => {
@@ -23,12 +28,13 @@ const Open = ({ children, opens: opensWindowName }) => {
 
 const Window = ({ children, name }) => {
     const { openName, close } = useContext(ModalContext);
+    const ref = useOutsideClick(close);
 
     if (name !== openName) return null;
 
     return (createPortal(
         <Overlay>
-            <StyledModal>
+            <StyledModal ref={ref}>
                 <Button onClick={close}>
                     <HiXMark />
                 </Button>
