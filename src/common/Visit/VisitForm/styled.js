@@ -1,16 +1,30 @@
 import styled from "styled-components";
 
-export const Image = styled.img`
-    width: 50%;
+export const Form = styled.form`
+   margin: 20px auto;
 `;
+
+export const Image = styled.img`
+    width: 300px;
+`;
+
 export const Fieldset = styled.fieldset`
-    padding: 20px;
+    border: none;
+    padding: 0;
+`;
+
+export const Legend = styled.legend`
+    padding: 40px 10px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
 `;
 
 export const Label = styled.label`
     display: flex;
     align-items: center;
-    margin: 20px;
+    margin: 10px;
+    min-width: 300px;
 
     @media (max-width: 767px) {
         flex-direction: column;
@@ -19,8 +33,9 @@ export const Label = styled.label`
 `;
 
 export const FieldName = styled.span`
-    display: block;
-    width: 30%;
+    width: 200px;
+    font-weight: 600;
+    letter-spacing: 2.6px;
 
     @media (max-width: 767px) {
         width: 100%;
@@ -30,17 +45,14 @@ export const FieldName = styled.span`
 
 export const Input = styled.input`
     width: 70%;
+    padding: 10px;
+    border: 2px solid ${({ theme }) => theme.colors.secondary};
+    border-radius: 5px;
+    transition: all 0.3s;
 
-    @media (max-width: 767px) {
-        width: 100%;
-    }
-`;
-
-export const Textarea = styled.textarea`
-    width: 70%;
-
-    @media (max-width: 767px) {
-        width: 100%;
+    &:focus {
+        border-color: ${({ theme }) => theme.colors.primary};
+        outline: none;
     }
 `;
 
@@ -48,6 +60,11 @@ export const Wrapper = styled.div`
     margin: 20px;
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
+    align-items: center;
     gap: 10px;
+
+    @media (max-width: 767px) {
+        margin: 0;
+        flex-direction: column;
+    }
 `;
