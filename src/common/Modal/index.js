@@ -1,9 +1,8 @@
 import { useState, useContext, cloneElement, createContext } from "react";
 import { createPortal } from "react-dom";
-import { HiXMark } from "react-icons/hi2";
-import Button from "../Button";
-import { Overlay, StyledModal } from "./styled";
+import { AiFillCloseCircle } from "react-icons/ai";
 import useOutsideClick from "./useOutsideClick";
+import { Overlay, StyledModal, ButtonClose } from "./styled";
 
 const ModalContext = createContext();
 
@@ -20,10 +19,14 @@ const Modal = ({ children }) => {
     )
 };
 
-const Open = ({ children, opens: opensWindowName }) => {
+const Open = ({ children, opens: opensWindowName, openMethod = "onClick" }) => {
     const { open } = useContext(ModalContext);
 
-    return (cloneElement(children, { onClick: () => open(opensWindowName) }));
+    const eventHandlerProps = {
+        [openMethod]: () => open(opensWindowName)
+    };
+
+    return (cloneElement(children, eventHandlerProps));
 };
 
 const Window = ({ children, name }) => {
@@ -35,9 +38,9 @@ const Window = ({ children, name }) => {
     return (createPortal(
         <Overlay>
             <StyledModal ref={ref}>
-                <Button onClick={close}>
-                    <HiXMark />
-                </Button>
+                <ButtonClose onClick={close} title={"Close Modal"}>
+                    <AiFillCloseCircle />
+                </ButtonClose>
                 <div>{cloneElement(children, { onCloseModal: close })}</div>
             </StyledModal>
         </Overlay>, document.body)
