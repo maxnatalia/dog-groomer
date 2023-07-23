@@ -4,6 +4,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import Logo from "../../../../common/Logo";
 import { navigationData } from './navigationData';
 import { Container, Link, List, MobileBox, StyledNavigation } from './styled';
+import VisitButton from '../../../../common/Visit/VisitButton';
 
 const variants = {
     visible: index => ({
@@ -56,6 +57,7 @@ const Navigation = () => {
                         )}
                     </AnimatePresence>
                 </List>
+                <VisitButton />
             </Container>
         </StyledNavigation>
     )
