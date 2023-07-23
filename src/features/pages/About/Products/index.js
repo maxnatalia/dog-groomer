@@ -1,11 +1,18 @@
+import { useState } from "react";
 import Section from "../../../../common/Section";
 import Title from "../../../../common/Title";
-import { Wrapper, Image, Box, Container, ProductBox, Name } from "./styled";
-import productsMain from "./productsMain.jpg";
 import Paragraph from "../../../../common/Paragraph";
+import productsMain from "./productsMain.jpg";
 import { dataProducts } from "./dataProducts";
+import { Wrapper, Image, Box, Container, ProductBox, Name, Content, Icon } from "./styled";
 
 const Products = () => {
+    const [selectedCard, setSelectedCard] = useState(null);
+
+    const handleSelectedCard = (id) => {
+        setSelectedCard(id !== selectedCard ? id : null);
+    };
+
     return (
         <Section id={"products"}>
             <Title text={"Why you can trust the products we use?"} extraContent />
@@ -19,9 +26,16 @@ const Products = () => {
                 </Box>
             </Wrapper>
             <Container>
-                {dataProducts.map(({ id, title, content, image }) => <ProductBox key={id} image={image}>
-                    <Name>{title}</Name>
-                    <Paragraph>{content}</Paragraph>
+                {dataProducts.map((product) => <ProductBox key={product.id}
+                    image={product.image}
+                    title={"See more details..."}
+                    onClick={() => handleSelectedCard(product.id)}
+                >
+                    <Name>{product.title}</Name>
+                    <Icon clicked={selectedCard === product.id} />
+                    <Content clicked={selectedCard === product.id}>
+                        <Paragraph>{product.content}</Paragraph>
+                    </Content>
                 </ProductBox>)}
             </Container>
         </Section>
