@@ -66,9 +66,9 @@ const Reviews = () => {
                 </ButtonsBox>
             </Box>
             <BoxLinks>
-                <ButtonLink to={""} text={"Make an Appointment"} />
-                <ButtonLink to={""} text={"See Offert"} />
-                <ButtonLink to={""} text={"About Us"} />
+                <ButtonLink to={"/visit"} text={"Make an Appointment"} />
+                <ButtonLink to={"/offer"} text={"See Offert"} />
+                <ButtonLink to={"/about"} text={"About Us"} />
             </BoxLinks>
         </Section>
     )
