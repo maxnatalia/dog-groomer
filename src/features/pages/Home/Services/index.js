@@ -48,8 +48,8 @@ const Services = () => {
                     <Paragraph >Well-groomed and beautiful coat is every dog owner's dream.</Paragraph>
                     <Paragraph >Our dog grooming company is ready to provide your furry companion with the highest quality care.</Paragraph>
                     <Paragraph> Our experience, knowledge, and love for animals make every interaction with your four-legged friend an unforgettable experience.</Paragraph>
-                    <IconPet reverse />
-                    <ButtonLink to={""} text={"see service offer"} />
+                    <IconPet reverse="true" />
+                    <ButtonLink to={"/offer"} text={"see service offer"} />
                 </Wrapper>
             </Container>
             <Summary>
