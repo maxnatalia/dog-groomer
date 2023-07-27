@@ -1,12 +1,15 @@
 import Hero from "../../../common/Hero";
-import { buttonsOffer } from "./buttonsOffer";
 import backgroundOffer from "./backgroundOffer.jpg";
+import { buttonsOffer } from "./buttonsOffer";
+import SectionOffert from "./SectionOffert";
 
 const Offer = () => {
     return (
         <>
             <Hero buttonsData={buttonsOffer} text={"..."} backgroundImage={backgroundOffer} />
-            <h2>More details will follow...</h2>
+            <SectionOffert offerType="smart" />
+            <SectionOffert offerType="premium" />
+            <SectionOffert offerType="royal" />
         </>
     )
 };
