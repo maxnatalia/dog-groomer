@@ -1,37 +1,16 @@
-import { useState } from "react";
 import Button from "../../Button";
 import Paragraph from "../../Paragraph";
 import Modal from "../../Modal";
 import Resume from "./Resume";
 import visitImage from "./visitImage.png";
-import { Form, Image, Label, FieldName, Input, Fieldset, Legend, Wrapper } from "./styled";
+import useFormVisit from "./useFormVisit";
+import { Form, Image, Label, FieldName, Input, Fieldset, Legend, Wrapper, PriceBox } from "./styled";
+
+const weights = ["Select...", "1-9 kg", "10-19 kg", "20-29 kg", "30-39 kg"];
+const offers = ["Select...", "smart", "premium", "royal"];
 
 const VisitForm = ({ onCloseModal }) => {
-    const [resume, setResume] = useState('');
-
-    const initialState = {
-        name: '',
-        email: '',
-        phone: '',
-        dog: '',
-        breed: '',
-        msg: '',
-    };
-
-    const [values, setValues] = useState(initialState);
-
-    const handleOnChange = (e) => {
-        const name = e.target.name;
-        const value = e.target.value;
-
-        setValues({ ...values, [name]: value });
-    };
-
-    const onFormSubmit = (e) => {
-        e.preventDefault();
-        setResume(`Thank you ${values.name} for visit with ${values.dog} - ${values.breed}. We will be in touch with you by phone(${values.phone}) and email(${values.email}) `);
-        setValues(initialState);
-    };
+    const { onFormSubmit, handleOnChange, resume, price, values } = useFormVisit();
 
     return (
         <Form onSubmit={onFormSubmit}>
@@ -89,6 +68,37 @@ const VisitForm = ({ onCloseModal }) => {
                         onChange={handleOnChange}
                     />
                 </Label>
+                <Label>
+                    <FieldName>Dog's Weight:*</FieldName>
+                    <Input
+                        as="select"
+                        required
+                        name="weight"
+                        value={values.weight}
+                        onChange={handleOnChange}>
+                        {weights.map((weight) => (
+                            <option key={weight}>{weight}</option>
+                        ))}
+                    </Input>
+                </Label>
+                <Label>
+                    <FieldName>Offer:*</FieldName>
+                    <Input
+                        as="select"
+                        required
+                        name="offer"
+                        value={values.offer}
+                        onChange={handleOnChange}>
+                        {offers.map((offer) => (
+                            <option key={offer}>{offer}</option>
+                        ))}
+                    </Input>
+                </Label>
+                {price > 0 &&
+                    <PriceBox>
+                        You chose the offer {values.offer} for a dog weighing {values.weight}, so the price is {price} $
+                    </PriceBox>
+                }
                 <Label>
                     <FieldName>Message:</FieldName>
                     <Input
