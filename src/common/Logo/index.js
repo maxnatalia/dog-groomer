@@ -1,14 +1,14 @@
 import logo from "./logo.png";
-import { Company, StyledLogo, Wrapper } from './styled';
+import { Text, StyledLogo, Wrapper } from './styled';
 
-const Logo = ({ onlyLogo }) => {
+const Logo = ({ onlyLogo, text = "Dog-Groomer" }) => {
     return (
         <Wrapper to={"/"} title={"Home"}>
             {onlyLogo
                 ? <StyledLogo src={logo} alt="logo" />
                 : <>
                     <StyledLogo src={logo} alt="logo" />
-                    <Company>Dog-Groomer</Company>
+                    <Text>{text}</Text>
                 </>
             }
         </Wrapper>
