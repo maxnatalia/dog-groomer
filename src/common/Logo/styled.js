@@ -26,10 +26,11 @@ export const StyledLogo = styled.img`
     }
 `;
 
-export const Company = styled.span`
+export const Text = styled.span`
     font-size: 24px;
     font-weight: 600;
     padding: 10px;
+    text-align: center;
 
     @media (max-width: 767px) {
         display: none;
