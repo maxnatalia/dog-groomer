@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/dog-groomer/static/js/main.a10446a6.js",
+    "main.js": "/dog-groomer/static/js/main.89c16dfd.js",
     "static/media/dogNew.jpg": "/dog-groomer/static/media/dogNew.9c6ba6a900a306eb5c28.jpg",
     "static/media/dog7.png": "/dog-groomer/static/media/dog7.7308e2519e2ecba4e6ec.png",
     "static/media/backgroundAbout.jpg": "/dog-groomer/static/media/backgroundAbout.ed40d9516f7466082bec.jpg",
@@ -21,13 +21,17 @@
     "static/media/dog5.jpg": "/dog-groomer/static/media/dog5.effbe381f6673c17bf56.jpg",
     "static/media/6.jpg": "/dog-groomer/static/media/6.5571ac6fca6ab49ca8f2.jpg",
     "static/media/dog2.jpg": "/dog-groomer/static/media/dog2.4393313bbb91e820f883.jpg",
+    "static/media/dog-categ-4.png": "/dog-groomer/static/media/dog-categ-4.572aadd2c62f94bdb645.png",
     "static/media/dog1.jpg": "/dog-groomer/static/media/dog1.cd42e250db1622dcb4f1.jpg",
+    "static/media/dog-categ-2.png": "/dog-groomer/static/media/dog-categ-2.ba7db388078543ebc191.png",
+    "static/media/dog-categ-3.png": "/dog-groomer/static/media/dog-categ-3.f785c631d3d35e92399f.png",
     "static/media/productsMain.jpg": "/dog-groomer/static/media/productsMain.8c7d74d0eb4b781a750f.jpg",
+    "static/media/dog-categ-1.png": "/dog-groomer/static/media/dog-categ-1.318829522e0ac63643b9.png",
     "static/media/logo.png": "/dog-groomer/static/media/logo.9d6f80ecaa9718763650.png",
     "index.html": "/dog-groomer/index.html",
-    "main.a10446a6.js.map": "/dog-groomer/static/js/main.a10446a6.js.map"
+    "main.89c16dfd.js.map": "/dog-groomer/static/js/main.89c16dfd.js.map"
   },
   "entrypoints": [
-    "static/js/main.a10446a6.js"
+    "static/js/main.89c16dfd.js"
   ]
 }
