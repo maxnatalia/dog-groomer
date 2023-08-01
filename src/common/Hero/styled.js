@@ -33,7 +33,7 @@ export const ButtonsBox = styled(motion.div)`
 
 export const MainTitle = styled.h1`
     margin: 0;
-    padding: 40px;
+    padding: 20px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -41,15 +41,19 @@ export const MainTitle = styled.h1`
     border-top: 2px solid ${({ theme }) => theme.colors.primary};
     background-color: ${({ theme }) => theme.colors.dark};
     color: ${({ theme }) => theme.colors.secondary};
-    font-size: 40px;
 
     @media (max-width: 767px) {
-        font-size: 26px;
         padding: 10px;
         margin: 0;
     }
 `;
 
 export const Letter = styled(motion.span)`
-    /* display: block; */
+    font-family: 'Sacramento', cursive;
+    font-size: 40px;
+    letter-spacing: 4px;
+
+    @media (max-width: 767px) {
+        font-size: 26px;
+    }
 `;
