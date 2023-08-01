@@ -3,7 +3,9 @@ import { MdContactPhone, MdOutlineAddTask } from "react-icons/md";
 import Button from "../Button";
 import { ButtonsBox, Letter, MainTitle, StyledHero } from "./styled";
 
-const Hero = ({ buttonsData, backgroundImage, text }) => {
+const Hero = ({ buttonsData, backgroundImage }) => {
+    const text = "Dog Groomer";
+
     return (
         <StyledHero backgroundImage={backgroundImage}>
             <ButtonsBox>
