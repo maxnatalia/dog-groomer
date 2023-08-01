@@ -9,6 +9,7 @@ export const theme = {
         veryDark: "#26282C",
         opacityColorDark: "rgba(232, 79, 119, 0.3)",
         opacityColorLight: "rgba(254, 232, 245, 0.5)",
+        opacityWhite: "rgba(232, 233, 235, 0.5)",
     },
     shadows: {
         light: `6px 6px 13px -5px #4B5058`,
