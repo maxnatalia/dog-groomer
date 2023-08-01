@@ -24,7 +24,6 @@ export const Label = styled.label`
     display: flex;
     align-items: center;
     margin: 10px;
-    min-width: 300px;
 
     @media (max-width: 767px) {
         flex-direction: column;
@@ -33,7 +32,7 @@ export const Label = styled.label`
 `;
 
 export const FieldName = styled.span`
-    width: 200px;
+    width: 40%;
     font-weight: 600;
     letter-spacing: 2.6px;
 
@@ -44,7 +43,7 @@ export const FieldName = styled.span`
 `;
 
 export const Input = styled.input`
-    width: 70%;
+    width: 60%;
     padding: 10px;
     border: 2px solid ${({ theme }) => theme.colors.secondary};
     border-radius: 5px;
@@ -67,4 +66,11 @@ export const Wrapper = styled.div`
         margin: 0;
         flex-direction: column;
     }
+`;
+
+export const PriceBox = styled.div`
+    margin: 0 auto;
+    padding: 20px;
+    color: ${({ theme }) => theme.colors.primary};
+    font-weight: 600;
 `;
