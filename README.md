@@ -1,8 +1,18 @@
 # 🐶Dog-Groomer
 
-Website created for practise more React, Styled Components and other technologies.
+Responsive Website created for practise more React (Compound Components), Styled Components, FramerMotion and other technologies.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## 🐶Features:
+
+- HomePage
+- OfferPage
+- AboutPage
+- Newsletter as Modal Window
+- Make an Appointment as Modal Window
+- Map (Leaflet) with localization
+- Animations with Framer Motion
 
 ## 📌Demo:
 
@@ -17,8 +27,12 @@ Feel free to see it!👁‍🗨
 - [x] JavaScript ES6+
 - [x] MediaQueries
 - [x] React
+- [x] React Router
 - [x] React hooks
 - [x] Styled-components
+- [x] Framer Motion
+- [x] Compound Components pattern
+- [x] React Leaflet
 
 ## Available Scripts
 
