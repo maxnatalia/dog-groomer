@@ -1,10 +1,10 @@
 import { Outlet, useLocation } from "react-router-dom";
+import { useEffect } from "react";
 import Footer from "./Footer";
 import Navigation from "./Navigation";
-import { useEffect } from "react";
-import { StyledAppLayout } from "./styled";
 import Newsletter from "./Newsletter";
 import Progress from "./Progress";
+import { StyledAppLayout } from "./styled";
 
 const Layout = () => {
     const location = useLocation();
