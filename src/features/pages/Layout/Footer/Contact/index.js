@@ -1,7 +1,7 @@
 import { Marker, Popup, TileLayer } from "react-leaflet";
-import { StyledContact, StyledMapContainer } from "./styled";
-import InfoBar from "../../../../../common/InfoBar";
 import { FaMapMarkerAlt } from "react-icons/fa";
+import InfoBar from "../../../../../common/InfoBar";
+import { StyledContact, StyledMapContainer } from "./styled";
 
 const Contact = () => {
     return (
