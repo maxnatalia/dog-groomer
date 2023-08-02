@@ -7,8 +7,7 @@ export const Container = styled.div`
 export const List = styled.ul`
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding-left: 0;
+    padding-left: 20px;
 `;
 
 export const Item = styled.li`
