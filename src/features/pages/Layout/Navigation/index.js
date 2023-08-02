@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import { AnimatePresence, motion } from 'framer-motion';
 import { FaBars, FaTimes } from "react-icons/fa";
+import { AnimatePresence, motion } from 'framer-motion';
+import VisitButton from '../../../../common/Visit/VisitButton';
 import Logo from "../../../../common/Logo";
 import { navigationData } from './navigationData';
 import { Container, Link, List, MobileBox, StyledNavigation } from './styled';
-import VisitButton from '../../../../common/Visit/VisitButton';
 
 const variants = {
     visible: index => ({
