@@ -1,9 +1,9 @@
-import dogContact from "./dog-contact.png";
 import { BsFillClockFill } from "react-icons/bs";
-import { social } from "./footerData";
 import Logo from "../../../../common/Logo";
 import InfoBar from "../../../../common/InfoBar";
 import Contact from "./Contact";
+import dogContact from "./dog-contact.png";
+import { social } from "./footerData";
 import {
     ContactWrapper,
     ContactInfo,
