@@ -6,7 +6,6 @@ import { dataReviews } from "./dataReviews";
 import { Box, BoxLinks, ButtonsBox, IconQuote, Next, Blockquote, Prev, Review } from "./styled";
 
 const Reviews = () => {
-
     const [index, setIndex] = useState(0);
 
     const nextSlide = () => {
