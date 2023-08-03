@@ -36,13 +36,13 @@ const Staff = () => {
                 if (index > staffData.length - 1) {
                     index = 0
                 }
-                return index
+                return index;
             })
         }, 3000)
         return () => {
             clearInterval(slider);
         }
-    }, [index])
+    }, [index]);
 
     return (
         <Section id={"staff"}>
