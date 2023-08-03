@@ -1,7 +1,7 @@
+import Hero from "../../../common/Hero";
 import Reviews from "./Reviews";
 import Gallery from "./Gallery";
 import Services from "./Services";
-import Hero from "../../../common/Hero";
 import { buttonsHome } from "./buttonsHome";
 import backgroundHome from "./backgroundHome.jpg";
 
@@ -13,7 +13,6 @@ const Home = () => {
             <Reviews />
             <Gallery />
         </>
-
     )
 };
 
