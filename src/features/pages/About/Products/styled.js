@@ -73,7 +73,7 @@ export const Name = styled.h4`
 export const Content = styled.div`
     opacity: 0;
 
-    ${({ clicked }) => clicked && css`
+    ${({ clicked }) => clicked === "true" && css`
         opacity: 1;
         padding: 10px;
         color: ${({ theme }) => theme.colors.secondary};
@@ -91,7 +91,7 @@ export const Icon = styled(TbHandClick)`
     transform: translate(-50%, -50%);
     opacity: 1;
 
-    ${({ clicked }) => clicked && css`
+    ${({ clicked }) => clicked === "true" && css`
         opacity: 0;
     `}
 `;
