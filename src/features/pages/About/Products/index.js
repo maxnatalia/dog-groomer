@@ -32,8 +32,8 @@ const Products = () => {
                     onClick={() => handleSelectedCard(product.id)}
                 >
                     <Name>{product.title}</Name>
-                    <Icon clicked={selectedCard === product.id} />
-                    <Content clicked={selectedCard === product.id}>
+                    <Icon clicked={selectedCard === product.id ? "true" : "false"} />
+                    <Content clicked={selectedCard === product.id ? "true" : "false"}>
                         <Paragraph>{product.content}</Paragraph>
                     </Content>
                 </ProductBox>)}
