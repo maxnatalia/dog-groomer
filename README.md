@@ -20,6 +20,8 @@ Feel free to see it!👁‍🗨
 
 [Dog-Groomer](https://maxnatalia.github.io/dog-groomer/)
 
+![dog-groomer.jpg](dog-groomer.JPG)
+
 ## 🛠️Used technologies:
 
 - [x] HTML
